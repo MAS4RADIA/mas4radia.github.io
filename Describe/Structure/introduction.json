@@ -1,0 +1,25 @@
+[
+   {
+      "nature": "SECTION",
+      "name": "landing",
+      "nested":
+          [
+             {
+                "nature": "DIV",
+                "class": "banner",
+                "nested":
+                    [
+                       {
+                          "nature": "SPAN",
+                          "class": "name",
+                          "id": "app_name"
+                        },
+                       {
+                          "nature": "SPAN",
+                          "class": "motto"
+                        }
+                     ]
+              }
+           ]
+    }
+ ]

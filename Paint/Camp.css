@@ -1,0 +1,9 @@
+@import "/Paint/Desktop/Error.css";
+@import "/Paint/Desktop/Structure.css";
+@import "/Paint/Desktop/Content.css";
+
+*
+    {
+       font-size: 100%;
+       font-family: serif;
+     }

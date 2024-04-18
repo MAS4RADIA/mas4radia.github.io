@@ -1,0 +1,12 @@
+[
+   {
+      "name": "landing",
+      "nested":
+          [
+             {
+                "class": "motto",
+                "text": "Yours trully!"
+              }
+           ]
+    }
+ ]

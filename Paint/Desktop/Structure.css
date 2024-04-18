@@ -1,0 +1,47 @@
+body
+    {
+       display: flex;
+       flex-direction: column-reverse;
+       height: 100vh;
+       margin: 0;
+     }
+
+#navigation
+    {
+       position: sticky;
+       top: 0;
+       padding: 0 10px;
+       padding-top: 15px;
+       background-color: #FFF;
+       border-bottom: 1px solid #777;
+       box-sizing: border-box;
+       text-align: right;
+     }
+
+#main
+    {
+       height: 100%;
+     }
+#main section
+    {
+       height: 100%;
+       box-sizing: border-box;
+     }
+
+[name="landing"]
+    {
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+     }
+[name="landing"] .banner
+    {
+       display: flex;
+       padding: 5px 10px;
+       align-items: center;
+       flex-direction: column;
+       box-shadow: 0 0 25px -1px #555;
+       justify-content: center;
+       border: 1px solid;
+     }

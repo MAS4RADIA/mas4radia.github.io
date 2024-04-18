@@ -1,0 +1,41 @@
+.full.screen.fatal.error
+    {
+       display: flex;
+       position: absolute;
+       top: 0;
+       left: 0;
+       right: 0;
+       bottom: 0;
+       background-color: #131319;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+     }
+.error > .message
+    {
+       display: flex;
+       flex-direction: column;
+       color: #FFF;
+       padding: 5px 15px;
+       box-sizing: border-box;
+       border: 1px solid #FFF;
+       background-color: #B3211F;
+       box-shadow: 0 0 15px 3px #000;
+       border-radius: 5px;
+       text-align: center;
+       z-index: 1;
+     }
+.error > .js.band
+    {
+       position: absolute;
+       width: 100%;
+       height: 60px;
+       border: 1px solid #FFF;
+       box-sizing: border-box;
+       background: url("/Shoot/JS.png");
+       background-color: #FF4;
+       background-size: 18px;
+       border-right: none;
+       border-left: none;
+       z-index: 0;
+     }
