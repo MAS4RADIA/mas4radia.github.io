@@ -25,5 +25,16 @@
                      ]
               }
            ]
+    },
+   {
+      "nature": "SECTION",
+      "name": "brief_introduction",
+      "nested":
+          [
+             {
+                "nature": "DIV",
+                "class": "paragraph"
+              }
+           ]
     }
  ]

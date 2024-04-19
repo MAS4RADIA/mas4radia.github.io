@@ -34,7 +34,7 @@ function MarkContent (main = null, structure = null)
        if (main == null || structure == null || main.tagName == undefined)
            {  return;  }
 
-       var current, value;
+       var current, done, value;
        if (Array.isArray (structure))
            {  current = structure;  }
        else if (typeof (structure) == "object")
@@ -45,25 +45,37 @@ function MarkContent (main = null, structure = null)
                   {  main.innerHTML = structure.text;  }
             }
 
+       done = new Object ();
        for (value in current)
            {
               if (isNaN (value))
                   {  continue;  }
 
-              var child, content, index;
+              var child, content, index, addition, property;
               child = main.children;
               content = current [value];
+              property = content ["class"];
+              if (done [property] == undefined)
+                  {  done [property] = 0;  }
 
               if (content.name != undefined)
                   {  child = child [content.name];  }
-              if (content ["class"] != undefined)
+              if (property != undefined)
                   {
                      index = 0;
-                     child = main.getElementsByClassName (content ["class"]);
+                     child = main.getElementsByClassName (property);
                      if (child.length > value)
                          {  index = value;  }
-                     child = child [index];
+                     if (child.length <= done [property])
+                         {
+                            addition = child [child.length - 1].cloneNode (true);
+                            main.appendChild (addition);
+                            child = addition;
+                          }
+                     else
+                         {  child = child [index];  }
                    }
               MarkContent (child, content);
+              done [property] ++;
             }
      }
