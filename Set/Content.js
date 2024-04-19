@@ -64,7 +64,6 @@ function MarkContent (main = null, structure = null)
                          {  index = value;  }
                      child = child [index];
                    }
-console.log (child, content);
               MarkContent (child, content);
             }
      }
