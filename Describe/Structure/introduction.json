@@ -11,6 +11,10 @@
                     [
                        {
                           "nature": "SPAN",
+                          "class": "motto"
+                        },
+                       {
+                          "nature": "SPAN",
                           "class": "name",
                           "id": "app_name"
                         },

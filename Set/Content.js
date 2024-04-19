@@ -40,6 +40,7 @@ function MarkContent (main = null, structure = null)
        else if (typeof (structure) == "object")
            {
               current = structure.nested;
+              delete structure.nested;
               if (structure.text != undefined)
                   {  main.innerHTML = structure.text;  }
             }
@@ -49,15 +50,20 @@ function MarkContent (main = null, structure = null)
               if (isNaN (value))
                   {  continue;  }
 
-              var child, content;
+              var child, content, index;
               child = main.children;
               content = current [value];
 
               if (content.name != undefined)
                   {  child = child [content.name];  }
               if (content ["class"] != undefined)
-                  {  child = main.getElementsByClassName (content ["class"]) [value];  }
-
+                  {
+                     index = 0;
+                     child = main.getElementsByClassName (content ["class"]);
+                     if (child.length > value)
+                         {  index = value;  }
+                     child = child [index];
+                   }
               MarkContent (child, content);
             }
      }

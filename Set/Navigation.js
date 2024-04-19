@@ -71,9 +71,7 @@ export function SetNavigation (room)
               anchor [room.path].classList.add ("active");
 
               MovePointerTo (anchor [room.path]);
-
               room.title.innerHTML = anchor [room.path].innerHTML;
-              room.title.innerHTML += " | " + room.name;
             }
        function MoveTo ()
            {
@@ -104,6 +102,6 @@ export function MovePointerTo (active = null)
               pointer.classList.add ("pointer");
               parent.appendChild (pointer);
             }
-       pointer.style.setProperty ("left", active.offsetLeft + "px");
+       pointer.style.setProperty ("left", (active.offsetLeft - 1) + "px");
        pointer.style.setProperty ("width", (active.offsetWidth + 1) + "px");
      }
