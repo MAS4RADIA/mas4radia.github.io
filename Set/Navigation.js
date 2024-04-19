@@ -72,8 +72,8 @@ export function SetNavigation (room)
 
               MovePointerTo (anchor [room.path]);
 
-              room.title.innerHTML = room.name + " | ";
-              room.title.innerHTML += anchor [room.path].innerHTML;
+              room.title.innerHTML = anchor [room.path].innerHTML;
+              room.title.innerHTML += " | " + room.name;
             }
        function MoveTo ()
            {
