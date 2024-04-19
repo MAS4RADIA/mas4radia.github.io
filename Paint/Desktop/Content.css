@@ -46,7 +46,7 @@
        box-sizing: border-box;
      }
 
-[name="landing"] .motto
+[name="landing"] :where(.intro, .motto)
     {
        padding: 3px 5px;
        color: #000;
