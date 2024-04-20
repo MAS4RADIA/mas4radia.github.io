@@ -70,24 +70,6 @@
                           "text": "Upgrading another kind of program would actually need more tweaks. Since I'd have to put in one or more functions in the old code (if I can import a code from another file) or open up/join a connection of some kind to reach the new program."
                         }
                      ]
-              },
-             {
-                "class": "paragraph",
-                "nested":
-                    [
-                       {
-                          "class": "title",
-                          "text": "UI/UX Design"
-                        },
-                       {
-                          "class": "content",
-                          "text": "Frankly, designing isn't one of my strong suits as displayed on this page. UX, I'm a little bit more confident but UI? Nah! I can't play with colors. If you want a dark website, then sure. I can probably whip a few things out but colors? Not my calling. Plus it takes me way too long just to figure out simple stuff."
-                        },
-                       {
-                          "class": "content",
-                          "text": "Technically, I'm a fullstack developer. Meaning, I can do front, back and middle. But you'd either have to have a design ready or do a paintjob after I'm done. Because, like I said (and displayed on this page), I'm not a good interface designer. My designs are there to make the use of the app/site easier, not make them look pretty."
-                        }
-                     ]
               }
            ]
     }
