@@ -82,7 +82,7 @@ function MarkContent (main = null, structure = null)
 function Template (node)
     {
        if (node.length != undefined)
-           {  node = node [node.length - 1];  }
+           {  node = node [0];  }
        if (node.tagName == undefined)
            {  return;  }
 

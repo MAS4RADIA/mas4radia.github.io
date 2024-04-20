@@ -27,12 +27,41 @@
                         },
                        {
                           "class": "content",
-                          "text": "You can think of as mechanic. But instead of vehicles, I operate on programs and apps. In short, I can fix and/or upgrade your website, app or almost any kind of program. That's the short version. But let me elaborate."
+                          "text": "You can think of as mechanic. But instead of vehicles, I operate on programs and apps. In short, I fix and/or upgrade your website, app or program within my capabilities. That's the short version. But let me elaborate."
+                        }
+                     ]
+              },
+              {
+                 "class": "paragraph",
+                 "nested":
+                    [
+                       {
+                          "class": "title",
+                          "text": "Development"
+                        },
+                       {
+                          "class": "content",
+                          "text": "I'm part of that coding world where we do this wierd thing called RESTful development. It's just a fancy word that means we don't mess our codes together. Each part of the system is  developed separately. It makes development, troubleshooting and upgrade much easier. Using that method, we can also easily combine multiple languages together to make up a program or system. The downside though is that it's not a one file program. So if coded poorly, losing one file could cause a disaster or even crash the whole system. (Although, that's true with just about any program/system.)"
+                        },
+                       {
+                          "class": "content",
+                          "text": "That's also one of the areas where yours truly comes in handy. I usually tend to those possibilities. It would still cripple the system in some kind of way though. Since that one file could contain a whole feature or a critical part of it. Anyway, that's a big if that rarely happens."
                         }
                      ]
               },
              {
-                "class": "paragraph"
+                "class": "paragraph",
+                "nested":
+                    [
+                       {
+                          "class": "title",
+                          "text": "Upgrade"
+                        },
+                       {
+                          "class": "content",
+                          "text": "As far as upgrade's concerned, this page is the perfect example. It's not exactly an upgrade as I developed it this way from the beginning. But! Here's the things I want to point out. If you visit this page without a JavaScript, you'll see an error message. That's about the HTML code I have on this webpage. Normally, a webpage/site's interface is coded in HTML and CSS. But since I wanted to be able to change the contents at will (plus the multilanguage feature), I got a little creative. Plus I wanted that 'routing' feature React.js got. It took me quite a while to learn it in Vanilla JS, so didn't want to waste it."
+                        }
+                     ]
               }
            ]
     }
