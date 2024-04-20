@@ -17,6 +17,7 @@ body
        user-select: none;
        text-align: right;
        box-sizing: border-box;
+       box-shadow: 0 3px 10px -5px #333;
      }
 
 #main
