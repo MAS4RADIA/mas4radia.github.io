@@ -45,7 +45,7 @@
                         },
                        {
                           "class": "content",
-                          "text": "That's also one of the areas where yours truly comes in handy. I usually tend to those possibilities. It would still cripple the system in some kind of way though. Since that one file could contain a whole feature or a critical part of it. Anyway, that's a big if that rarely happens."
+                          "text": " That's also one of the areas where yours truly comes in handy. I usually tend to those possibilities. It would still cripple the system in some kind of way though. Since that one file could contain a whole feature or a critical part of it. Anyway, that's a big if that rarely happens."
                         }
                      ]
               },
@@ -63,11 +63,25 @@
                         },
                        {
                           "class": "content",
-                          "text": "Anyways, the point is, that's how I upgrade your website. I just put some classes in the HTML file (or just work with the ones we got), add my script and let it do its magic. It doesn't even have to do anything to its old features. Just adds new ones."
+                          "text": " Anyways, the point is, that's how I upgrade your website. I just put some classes in the HTML file (or just work with the ones we got), add my script and let it do its magic. It doesn't even have to do anything to its old features. Just adds new ones."
                         },
                        {
                           "class": "content",
-                          "text": "Upgrading another kind of program would actually need more tweaks. Since I'd have to put in one or more functions in the old code (if I can import a code from another file) or open up/join a connection of some kind to reach the new program."
+                          "text": " Upgrading another kind of program would actually need more tweaks. Since I'd have to put in one or more functions in the old code (if I can import a code from another file) or open up/join a connection of some kind to reach the new program."
+                        }
+                     ]
+              },
+             {
+                "class": "paragraph",
+                "nested":
+                    [
+                       {
+                          "class": "title",
+                          "text": "UI/UX Design"
+                        },
+                       {
+                          "class": "content",
+                          "text": "As evidenced by this page, I'm not very good at UI designing. The only designing I have a smudge of confidence in is UX. My interfaces are almost always meant to make the program easy to use. Not make it pretty. And it's not really because I don't enjoy the nice views some apps have. But I guess I just don't got it. I don't have what it takes to make colorful designs. Weird dark designs though? I'm a bit more confident. I could make a dark design."
                         }
                      ]
               }
