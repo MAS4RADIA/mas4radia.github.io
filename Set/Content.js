@@ -68,7 +68,7 @@ function MarkContent (main = null, structure = null)
                          {  index = value;  }
                      if (child.length <= done [property])
                          {
-                            addition = child [child.length - 1].cloneNode (true);
+                            addition = Template (child);
                             main.appendChild (addition);
                             child = addition;
                           }
@@ -77,5 +77,49 @@ function MarkContent (main = null, structure = null)
                    }
               MarkContent (child, content);
               done [property] ++;
+            }
+     }
+function Template (node)
+    {
+       if (node.length != undefined)
+           {  node = node [node.length - 1];  }
+       if (node.tagName == undefined)
+           {  return;  }
+
+       var clean;
+       clean = node.cloneNode (true);
+       clean = ClearContents (clean);
+       return (clean);
+
+       function ClearContents (node = null)
+           {
+              if (node == null)
+                  {  return;  }
+
+              var child, element,
+                parent, sibling, thing;
+              child = node.children;
+              if (child.length < 1 && node.tagName != undefined)
+                  {
+                     node.innerHTML = null;
+                     if (node.parentNode == undefined)
+                         {  return (node);  }
+                     parent = node.parentNode;
+                     sibling = parent.getElementsByClassName (node.className);
+                     for (thing in sibling)
+                         {
+                            if (isNaN (thing) || sibling [thing] == node)
+                                {  continue;  }
+                            parent.removeChild (sibling [thing]);
+                          }
+                   }
+
+              for (element in child)
+                  {
+                     if (isNaN (element))
+                         {  continue;  }
+                     ClearContents (child [element]);
+                   }
+              return (node);
             }
      }

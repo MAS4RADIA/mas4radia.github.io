@@ -22,28 +22,6 @@
        background-color: #333;
        color: #FFF;
      }
-[name="landing"] .banner .name::before
-    { 
-       content: "";
-       position: absolute;
-       top: -24px;
-       left: 0;
-       border: 12px solid #222;
-       border-left-color: transparent;
-       border-top-color: transparent;
-       box-sizing: border-box;
-     }
-[name="landing"] .banner .name::after
-    {
-       content: "";
-       position: absolute;
-       bottom: -24px;
-       right: 0;
-       border: 12px solid #1A1A1A;
-       border-bottom-color: transparent;
-       border-right-color: transparent;
-       box-sizing: border-box;
-     }
 
 [name="landing"] :where(.intro, .motto)
     {

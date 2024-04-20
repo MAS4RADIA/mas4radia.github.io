@@ -9,7 +9,7 @@
               },
              {
                 "class": "motto",
-                "text": "Yours trully!"
+                "text": "Yours truly!"
               }
            ]
     },
@@ -19,27 +19,20 @@
           [
              {
                 "class": "paragraph",
-                "text": "Hi! I'm MAS4RADIA. A developer or a coder? I don't know.<br />The point is, I'm not much of anything else but I can code. And I love coding."
+                "nested":
+                    [
+                       {
+                          "class": "title",
+                          "text": "Who am I?"
+                        },
+                       {
+                          "class": "content",
+                          "text": "You can think of as mechanic. But instead of vehicles, I operate on programs and apps. In short, I can fix and/or upgrade your website, app or almost any kind of program. That's the short version. But let me elaborate."
+                        }
+                     ]
               },
              {
-                "class": "paragraph",
-                "text": "We all see that design-wise I'm a little meh~ But the middle and back stuff? That's my turf. Just like how this is entirely run on Vanilla JavaScript. <i>This</i> is the middle, one of the places where I shine."
-              },
-             {
-                "class": "paragraph",
-                "text": "When it gets in the middle, my code is like a octopus. It grabs everything and puts them where they belong.<br />Let's take this site as an example. Every <q>link</q> or <q>button</q> in here is probably just a <i>span</i> element. The code just sees it as a button or a link and attaches a button's or link's task to it.<br />As a matter of fact, there's only a single HTML file in this whole project. One HTML file with a minimum amount of code in it."
-              },
-             {
-                "class": "paragraph",
-                "text": "In this instance, there isn't much I can do about the back. Since, apparently, GitHub only allows HTML, CSS and JS on this option. Gotta make do with what we got. Well, this isn't a place to go wild anyway. Just to showcase a few tricks I got."
-              },
-             {
-                "class": "paragraph",
-                "text": "You won't find my picture of or name in here but if you go through everything in here, you'll already know me better than most."
-              },
-             {
-                "class": "paragraph",
-                "text": "I'm not gonna ramble here for hours long. So, please tour to your heart's content. And if you ever wanna get in touch, please do contact me. I'll leave my contact info in the contact section when it's done."
+                "class": "paragraph"
               }
            ]
     }

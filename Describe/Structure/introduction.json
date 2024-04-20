@@ -33,7 +33,18 @@
           [
              {
                 "nature": "DIV",
-                "class": "paragraph"
+                "class": "paragraph",
+                "nested":
+                    [
+                       {
+                          "nature": "SPAN",
+                          "class": "title"
+                        },
+                       {
+                          "nature": "SPAN",
+                          "class": "content"
+                        }
+                     ]
               }
            ]
     }
