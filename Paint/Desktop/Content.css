@@ -16,8 +16,8 @@
     {
        position: relative;
        padding: 5px 15px;
-       font-size: 50px;
        width: 295px;
+       font-size: 50px;
        font-family: "Local Roboto", sans-serif;
        background-color: #333;
        color: #FFF;
@@ -26,4 +26,15 @@
 [name="landing"] :where(.intro, .motto)
     {
        color: #000;
+     }
+
+[name="briefing"] .paragraph .title
+    {
+       position: absolute;
+       top: -12px;
+       left: 10px;
+       padding: 3px 15px;
+       border-radius: 5px;
+       background-color: #055;
+       color: #FFF;
      }

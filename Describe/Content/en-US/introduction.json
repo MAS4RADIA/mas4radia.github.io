@@ -14,7 +14,7 @@
            ]
     },
    {
-      "name": "brief_introduction",
+      "name": "briefing",
       "nested":
           [
              {
@@ -27,7 +27,7 @@
                         },
                        {
                           "class": "content",
-                          "text": "You can think of as mechanic. But instead of vehicles, I operate on programs and apps. In short, I fix and/or upgrade your website, app or program within my capabilities. That's the short version. But let me elaborate."
+                          "text": "You can think of as a mechanic. But instead of vehicles, I operate on programs and apps. In short, I fix and/or upgrade your website, app or program within my capabilities. That's the short version. Let me elaborate."
                         }
                      ]
               },
@@ -59,7 +59,33 @@
                         },
                        {
                           "class": "content",
-                          "text": "As far as upgrade's concerned, this page is the perfect example. It's not exactly an upgrade as I developed it this way from the beginning. But! Here's the things I want to point out. If you visit this page without a JavaScript, you'll see an error message. That's about the HTML code I have on this webpage. Normally, a webpage/site's interface is coded in HTML and CSS. But since I wanted to be able to change the contents at will (plus the multilanguage feature), I got a little creative. Plus I wanted that 'routing' feature React.js got. It took me quite a while to learn it in Vanilla JS, so didn't want to waste it."
+                          "text": "As far as upgrade goes, this page is the perfect example. It's not exactly an upgrade as I developed it this way from the beginning. But! Here's the things I want to point out. If you visit this page without a JavaScript, you'll see an error message. That's about all the HTML code I got on this webpage. Normally, a webpage/site's interface is coded in HTML and CSS. But since I wanted to be able to change the contents at will (plus the multilanguage feature), I got a little creative. And I wanted that routing feature React.js got. It took me quite a while to learn it in Vanilla JS, so didn't want to waste it."
+                        },
+                       {
+                          "class": "content",
+                          "text": "Anyways, the point is, that's how I upgrade your website. I just put some classes in the HTML file (or just work with the ones we got), add my script and let it do its magic. It doesn't even have to do anything to its old features. Just adds new ones."
+                        },
+                       {
+                          "class": "content",
+                          "text": "Upgrading another kind of program would actually need more tweaks. Since I'd have to put in one or more functions in the old code (if I can import a code from another file) or open up/join a connection of some kind to reach the new program."
+                        }
+                     ]
+              },
+             {
+                "class": "paragraph",
+                "nested":
+                    [
+                       {
+                          "class": "title",
+                          "text": "UI/UX Design"
+                        },
+                       {
+                          "class": "content",
+                          "text": "Frankly, designing isn't one of my strong suits as displayed on this page. UX, I'm a little bit more confident but UI? Nah! I can't play with colors. If you want a dark website, then sure. I can probably whip a few things out but colors? Not my calling. Plus it takes me way too long just to figure out simple stuff."
+                        },
+                       {
+                          "class": "content",
+                          "text": "Technically, I'm a fullstack developer. Meaning, I can do front, back and middle. But you'd either have to have a design ready or do a paintjob after I'm done. Because, like I said (and displayed on this page), I'm not a good interface designer. My designs are there to make the use of the app/site easier, not make them look pretty."
                         }
                      ]
               }
