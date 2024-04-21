@@ -13,9 +13,11 @@ export function SetWhole (room)
               main.id = "main";
               body.appendChild (main);
             }
+       main.setAttribute ("tabIndex", 0);
+       main.focus ();
+
        path = "/Describe/Structure/";
        path += room.path + ".json";
-       //window.addEventListener ("scrollend", ScrollMonitor);
 
        request = new XMLHttpRequest ();
        request.open ("GET", path, true);

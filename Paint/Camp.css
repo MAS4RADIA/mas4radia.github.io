@@ -13,3 +13,7 @@
        font-size: 100%;
        font-family: serif;
      }
+*:focus
+    {
+       outline: none;
+     }
