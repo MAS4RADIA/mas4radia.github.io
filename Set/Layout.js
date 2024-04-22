@@ -13,7 +13,7 @@ export function SetWhole (room)
               main.id = "main";
               body.appendChild (main);
             }
-       main.setAttribute ("tabIndex", 0);
+       main.setAttribute ("tabindex", 0);
        main.focus ({ preventScroll: true });
 
        path = "/Describe/Structure/";

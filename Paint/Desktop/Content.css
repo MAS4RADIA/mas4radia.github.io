@@ -1,6 +1,6 @@
 #navigation .link
     {
-       margin: 15px 5px;
+       padding: 15px 5px;
        cursor: pointer;
      }
 #navigation .pointer
@@ -32,9 +32,8 @@
     {
        position: absolute;
        top: -12px;
-       left: 25px;
+       left: 15px;
        padding: 3px 15px;
-       border-radius: 5px;
        background-color: #333;
        color: #FFF;
      }

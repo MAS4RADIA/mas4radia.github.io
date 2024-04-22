@@ -102,6 +102,6 @@ export function MovePointerTo (active = null)
               pointer.classList.add ("pointer");
               parent.appendChild (pointer);
             }
-       pointer.style.setProperty ("left", (active.offsetLeft - 5) + "px");
-       pointer.style.setProperty ("width", (active.offsetWidth + 10) + "px");
+       pointer.style.setProperty ("left", active.offsetLeft + "px");
+       pointer.style.setProperty ("width", active.offsetWidth + "px");
      }

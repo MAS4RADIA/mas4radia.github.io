@@ -70,8 +70,7 @@ body
        margin: 10px 0;
        padding: 10px;
        padding-top: 15px;
-       border: 1px solid #777;
-       box-shadow: 0 0 15px -5px #777;
+       border: 1px solid #AAA;
+       box-shadow: 0 0 15px 1px #999;
        box-sizing: border-box;
-       border-radius: 5px;
      }
