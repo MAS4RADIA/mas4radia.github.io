@@ -1,0 +1,21 @@
+@media screen and (max-width: 600px)
+    {
+       #navigation .link
+           {
+              margin: 0;
+              transition: all .7s;
+            }
+       #navigation .active.link
+           {
+              color: #FFF;
+            }
+
+       #navigation .pointer
+           {
+              height: 100%;
+              border: none;
+              border-radius: 0;
+              background-color: #333;
+              z-index: -1;
+            }
+     }

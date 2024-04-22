@@ -2,12 +2,20 @@
 @import "/Paint/Desktop/Structure.css";
 @import "/Paint/Desktop/Content.css";
 
+@import "/Paint/Mobile/Structure.css";
+@import "/Paint/Mobile/Content.css";
+
 @font-face
     {
        font-family: "Local Roboto";
        src: url("/Carve/Roboto/Roboto-Regular.ttf");
      }
 
+body
+    {
+       width: 100vw;
+       height: 100vh;
+     }
 *
     {
        font-size: 100%;
