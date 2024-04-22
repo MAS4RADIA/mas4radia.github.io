@@ -9,7 +9,6 @@
            {
               color: #FFF;
             }
-
        #navigation .pointer
            {
               height: 100%;
@@ -18,5 +17,19 @@
               background-color: #333;
               transition-duration: .5s;
               z-index: -1;
+            }
+
+       [name="landing"] .banner
+           {
+              border: none;
+              border-top: 2px solid #333;
+              border-bottom: 2px solid #333;
+            }
+       [name="landing"] .banner .name
+           {
+              width: 100%;
+              padding: 5px 0;
+              font-size: 45px;
+              border: none;
             }
      }
