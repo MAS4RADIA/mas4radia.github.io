@@ -12,7 +12,7 @@
               height: 50px;
               padding: 0 5px;
               flex-direction: row;
-              justify-content: space-between;
+              justify-content: space-evenly;
               border-top: 1px solid #777;
               align-items: center;
               box-shadow: none;
