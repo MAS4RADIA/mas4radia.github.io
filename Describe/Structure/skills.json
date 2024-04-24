@@ -1,10 +1,40 @@
 [
    {
       "nature": "SECTION",
-      "name": "side_panel"
-    },
-   {
-      "nature": "SECTION",
-      "name": ""
+      "class": "skillset",
+      "nested":
+          [
+             {
+                "nature": "SPAN",
+                "class": "title"
+              },
+             {
+                "nature": "DIV",
+                "class": "skill",
+                "nested":
+                    [
+                       {
+                          "nature": "SPAN",
+                          "class": "label",
+                          "nested":
+                              [
+                                 {
+                                    "nature": "SPAN",
+                                    "class": "name"
+                                  },
+                                 {
+                                    "nature": "SPAN",
+                                    "class": "extra"
+                                  }
+                               ]
+                        },
+                       {
+                          "nature": "PROGRESS",
+                          "class": "level",
+                          "max": 100
+                        }
+                     ]
+              }
+           ]
     }
  ]

@@ -17,4 +17,8 @@
               align-items: center;
               box-shadow: none;
             }
+       .side.panel
+           {
+              display: none;
+            }
      }

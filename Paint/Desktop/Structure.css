@@ -26,7 +26,7 @@ body
        overflow-x: hidden;
        overflow-y: auto;
      }
-#main section
+#main > section
     {
        min-height: 100%;
        box-sizing: border-box;
@@ -73,4 +73,46 @@ body
        border: 1px solid #AAA;
        box-shadow: 0 0 15px 1px #999;
        box-sizing: border-box;
+     }
+
+#main[name="skills"]
+    {
+       display: flex;
+       padding: 5px;
+       width: 100%;
+       height: 100%;
+       flex-wrap: wrap;
+       flex-direction: column;
+       box-sizing: border-box;
+     }
+
+#main[name="skills"] .skillset
+    {
+       position: relative;
+       display: flex;
+       padding: 5px;
+       margin: 5px;
+       border-radius: 5px;
+       border: 1px solid #777;
+       min-height: min-content;
+       max-height: min-content;
+       align-items: flex-start;
+       flex-direction: column;
+     }
+#main[name="skills"] .skill
+    {
+       display: flex;
+       width: 100%;
+       justify-content: space-between;
+     }
+#main[name="skills"] .skill .label
+    {
+       display: flex;
+       max-width: 50%;
+       margin-right: 10px;
+       justify-content: space-between;
+     }
+#main[name="skills"] .skill .level
+    {
+       width: 50%;
      }

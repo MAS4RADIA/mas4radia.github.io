@@ -15,6 +15,7 @@ export function SetWhole (room)
             }
        main.setAttribute ("tabindex", 0);
        main.focus ({ preventScroll: true });
+       main.setAttribute ("name", room.path);
 
        path = "/Describe/Structure/";
        path += room.path + ".json";

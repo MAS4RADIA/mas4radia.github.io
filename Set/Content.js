@@ -34,15 +34,26 @@ function MarkContent (main = null, structure = null)
        if (main == null || structure == null || main.tagName == undefined)
            {  return;  }
 
-       var current, done, value;
+       var done, current, property, value;
        if (Array.isArray (structure))
            {  current = structure;  }
        else if (typeof (structure) == "object")
            {
               current = structure.nested;
-              delete structure.nested;
               if (structure.text != undefined)
                   {  main.innerHTML = structure.text;  }
+
+              delete structure ["class"];
+              delete structure.nested;
+              delete structure.name;
+              delete structure.text;
+
+              for (property in structure)
+                  {
+                     if (!isNaN (property))
+                         {  continue;  }
+                     main.setAttribute (property, structure [property]);
+                   }
             }
 
        done = new Object ();
@@ -86,9 +97,9 @@ function Template (node)
        if (node.tagName == undefined)
            {  return;  }
 
-       var clean;
-       clean = node.cloneNode (true);
-       clean = ClearContents (clean);
+       var raw, clean;
+       raw = node.cloneNode (true);
+       clean = ClearContents (raw);
        return (clean);
 
        function ClearContents (node = null)
@@ -99,6 +110,7 @@ function Template (node)
               var child, element,
                 parent, sibling, thing;
               child = node.children;
+
               if (child.length < 1 && node.tagName != undefined)
                   {
                      node.innerHTML = null;
@@ -112,6 +124,21 @@ function Template (node)
                                 {  continue;  }
                             parent.removeChild (sibling [thing]);
                           }
+                   }
+
+              element = 0;
+              while (element < child.length)
+                  {
+                     var current;
+                     current = child [element];
+                     sibling = node.getElementsByClassName (current.className);
+                     if (sibling.length > 1)
+                         {
+                            node.removeChild (sibling [1]);
+                            element = 0;
+                            continue;
+                          }
+                     element ++;
                    }
 
               for (element in child)

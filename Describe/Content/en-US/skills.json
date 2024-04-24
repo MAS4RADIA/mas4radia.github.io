@@ -1,0 +1,524 @@
+[
+   {
+      "class": "skillset",
+      "nested":
+          [
+             {
+                "class": "title",
+                "text": "Fields"
+              },
+             {
+                "class": "skill",
+                "nested":
+                    [
+                       {
+                          "class": "name",
+                          "text": "Programming"
+                        },
+                       {
+                          "class": "level",
+                          "value": 75
+                        }
+                     ]
+              },
+             {
+                "class": "skill",
+                "nested":
+                    [
+                       {
+                          "class": "name",
+                          "text": "Application development"
+                        },
+                       {
+                          "class": "level",
+                          "value": 20
+                        }
+                     ]
+              },
+             {
+                "class": "skill",
+                "nested":
+                    [
+                       {
+                          "class": "name",
+                          "text": "Networking"
+                        },
+                       {
+                          "class": "level",
+                          "value": 10
+                        }
+                     ]
+              },
+             {
+                "class": "skill",
+                "nested":
+                    [
+                       {
+                          "class": "name",
+                          "text": "Drawing"
+                        },
+                       {
+                          "class": "level",
+                          "value": 35
+                        }
+                     ]
+              },
+             {
+                "class": "skill",
+                "nested":
+                    [
+                       {
+                          "class": "name",
+                          "text": "Understanding"
+                        },
+                       {
+                          "class": "level",
+                          "value": 70
+                        }
+                     ]
+              },
+             {
+                "class": "skill",
+                "nested":
+                    [
+                       {
+                          "class": "name",
+                          "text": "Research"
+                        },
+                       {
+                          "class": "level",
+                          "value": 80
+                        }
+                     ]
+              }
+           ]
+    },
+   {
+      "class": "skillset",
+      "nested":
+          [
+             {
+                "class": "title",
+                "text": "Spoken languages"
+              },
+             {
+                "class": "skill",
+                "nested":
+                    [
+                       {
+                          "class": "name",
+                          "text": "Bestimisaraka"
+                        },
+                       {
+                          "class": "extra",
+                          "text": "MG"
+                        },
+                       {
+                          "class": "level",
+                          "value": 90
+                        }
+                     ]
+              },
+             {
+                "class": "skill",
+                "nested":
+                    [
+                       {
+                          "class": "name",
+                          "text": "English"
+                        },
+                       {
+                          "class": "extra",
+                          "text": "US"
+                        },
+                       {
+                          "class": "level",
+                          "value": 85
+                        }
+                     ]
+              },
+             {
+                "class": "skill",
+                "nested":
+                    [
+                       {
+                          "class": "name",
+                          "text": "French"
+                        },
+                       {
+                          "class": "extra",
+                          "text": "FR"
+                        },
+                       {
+                          "class": "level",
+                          "value": 80
+                        }
+                     ]
+              }
+           ]
+    },
+   {
+      "class": "skillset",
+      "nested":
+          [
+             {
+                "class": "title",
+                "text": "Programming paradigms"
+              },
+             {
+                "class": "skill",
+                "nested":
+                    [
+                       {
+                          "class": "name",
+                          "text": "Object-Oriented Programming"
+                        },
+                       {
+                          "class": "level",
+                          "value": 40
+                        }
+                     ]
+              },
+             {
+                "class": "skill",
+                "nested":
+                    [
+                       {
+                          "class": "name",
+                          "text": "Event-Driven Programming"
+                        },
+                       {
+                          "class": "level",
+                          "value": 60
+                        }
+                     ]
+              }
+           ]
+    },
+   {
+      "class": "skillset",
+      "nested":
+          [
+             {
+                "class": "title",
+                "text": "Widget toolkits"
+              },
+             {
+                "class": "skill",
+                "nested":
+                    [
+                       {
+                          "class": "name",
+                          "text": "Qt"
+                        },
+                       {
+                          "class": "level",
+                          "value": 40
+                        }
+                     ]
+              },
+             {
+                "class": "skill",
+                "nested":
+                    [
+                       {
+                          "class": "name",
+                          "text": "GTK"
+                        },
+                       {
+                          "class": "level",
+                          "value": 50
+                        }
+                     ]
+              }
+           ]
+    },
+   {
+      "class": "skillset",
+      "nested":
+          [
+             {
+                "class": "title",
+                "text": "Design"
+              },
+             {
+                "class": "skill",
+                "nested":
+                    [
+                       {
+                          "class": "name",
+                          "text": "User Interface"
+                        },
+                       {
+                          "class": "level",
+                          "value": 30
+                        }
+                     ]
+              },
+             {
+                "class": "skill",
+                "nested":
+                    [
+                       {
+                          "class": "name",
+                          "text": "User Experience"
+                        },
+                       {
+                          "class": "level",
+                          "value": 50
+                        }
+                     ]
+              },
+             {
+                "class": "skill",
+                "nested":
+                    [
+                       {
+                          "class": "name",
+                          "text": "Database"
+                        },
+                       {
+                          "class": "level",
+                          "value": 60
+                        }
+                     ]
+              }
+           ]
+    },
+   {
+      "class": "skillset",
+      "nested":
+          [
+             {
+                "class": "title",
+                "text": "Operating systems"
+              },
+             {
+                "class": "skill",
+                "nested":
+                    [
+                       {
+                          "class": "name",
+                          "text": "Linux"
+                        },
+                       {
+                          "class": "level",
+                          "value": 40
+                        }
+                     ]
+              },
+             {
+                "class": "skill",
+                "nested":
+                    [
+                       {
+                          "class": "name",
+                          "text": "Windows"
+                        },
+                       {
+                          "class": "level",
+                          "value": 40
+                        }
+                     ]
+              }
+           ]
+    },
+   {
+      "class": "skillset",
+      "nested":
+          [
+             {
+                "class": "title",
+                "text": "Web development"
+              },
+             {
+                "class": "skill",
+                "nested":
+                    [
+                       {
+                          "class": "name",
+                          "text": "HTML"
+                        },
+                       {
+                          "class": "level",
+                          "value": 50
+                        }
+                     ]
+              },
+             {
+                "class": "skill",
+                "nested":
+                    [
+                       {
+                          "class": "name",
+                          "text": "CSS"
+                        },
+                       {
+                          "class": "level",
+                          "value": 60
+                        }
+                     ]
+              },
+             {
+                "class": "skill",
+                "nested":
+                    [
+                       {
+                          "class": "name",
+                          "text": "JavaScript"
+                        },
+                       {
+                          "class": "level",
+                          "value": 70
+                        }
+                     ]
+              },
+             {
+                "class": "skill",
+                "nested":
+                    [
+                       {
+                          "class": "name",
+                          "text": "PHP"
+                        },
+                       {
+                          "class": "level",
+                          "value": 50
+                        }
+                     ]
+              }
+           ]
+    },
+   {
+      "class": "skillset",
+      "nested":
+          [
+             {
+                "class": "title",
+                "text": "DBMS"
+              },
+             {
+                "class": "skill",
+                "nested":
+                    [
+                       {
+                          "class": "name",
+                          "text": "MySQL"
+                        },
+                       {
+                          "class": "level",
+                          "value": 20
+                        }
+                     ]
+              },
+             {
+                "class": "skill",
+                "nested":
+                    [
+                       {
+                          "class": "name",
+                          "text": "PostgreSQL"
+                        },
+                       {
+                          "class": "level",
+                          "value": 15
+                        }
+                     ]
+              },
+             {
+                "class": "skill",
+                "nested":
+                    [
+                       {
+                          "class": "name",
+                          "text": "MongoDB"
+                        },
+                       {
+                          "class": "level",
+                          "value": 10
+                        }
+                     ]
+              }
+           ]
+    },
+   {
+      "class": "skillset",
+      "nested":
+          [
+             {
+                "class": "title",
+                "text": "Programming languages"
+              },
+             {
+                "class": "skill",
+                "nested":
+                    [
+                       {
+                          "class": "name",
+                          "text": "C"
+                        },
+                       {
+                          "class": "level",
+                          "value": 70
+                        }
+                     ]
+              },
+             {
+                "class": "skill",
+                "nested":
+                    [
+                       {
+                          "class": "name",
+                          "text": "Python"
+                        },
+                       {
+                          "class": "level",
+                          "value": 60
+                        }
+                     ]
+              },
+             {
+                "class": "skill",
+                "nested":
+                    [
+                       {
+                          "class": "name",
+                          "text": "C++"
+                        },
+                       {
+                          "class": "level",
+                          "value": 40
+                        }
+                     ]
+              },
+             {
+                "class": "skill",
+                "nested":
+                    [
+                       {
+                          "class": "name",
+                          "text": "Java"
+                        },
+                       {
+                          "class": "level",
+                          "value": 50
+                        }
+                     ]
+              },
+             {
+                "class": "skill",
+                "nested":
+                    [
+                       {
+                          "class": "name",
+                          "text": "Vala"
+                        },
+                       {
+                          "class": "level",
+                          "value": 30
+                        }
+                     ]
+              }
+           ]
+    }
+ ]
