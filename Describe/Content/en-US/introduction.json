@@ -27,7 +27,7 @@
                         },
                        {
                           "class": "content",
-                          "text": "You can think of as a mechanic. But instead of vehicles, I operate on programs and apps. In short, I fix and/or upgrade your website, app or program within my capabilities of course. That's the short version. Let me elaborate."
+                          "text": "I am a coder. Through and through. I love codes and codes adore me. It's that kind of thing. I love to be in position where I can code the most. That is exactly why I chose API development/integration. You just tell me what feature you want for your app; web or not matters not. And I deliver it to you. Simple as that. For the web part, I can even embed it myself using a JavaScript code (as I'm also quite into JavaScript). All you'd need to tell me is how it should interact with your User Interface."
                         }
                      ]
               },
@@ -37,15 +37,15 @@
                     [
                        {
                           "class": "title",
-                          "text": "Development"
+                          "text": "What's an API"
                         },
                        {
                           "class": "content",
-                          "text": "I'm part of that coding world where we do this wierd thing called RESTful development. It's just a fancy word that means we don't mess our codes together. Each part of the system is  developed separately. It makes development, troubleshooting and upgrade much easier. Using that method, we can also easily combine multiple languages together to make up a program or system. The downside though is that it's not a one file program. So if coded poorly, losing one file could cause a disaster or even crash the whole system. (Although, that's true with just about any program/system.)"
+                          "text": "An Application Programming Interface (or API for short) is a program that performs a particular task to be used by another program that can't perfom said task for a reason or another. For example, JavaScprit can't interact with the file system. Best it can do is read a file through one of its embedded fetching APIs. Yes, JavaScript does have embedded APIs. In fact, it has quite a few (a lot) of them. But if you want to interact with the file system, you'd have to outsource it to a server API. Said server API could optionally run a program or just listen and reponds to the requests directly."
                         },
                        {
                           "class": "content",
-                          "text": " That's also one of the areas where yours truly comes in handy. I usually tend to those possibilities. It would still cripple the system in some kind of way though. Since that one file could contain a whole feature or a critical part of it. Anyway, that's a big if that rarely happens."
+                          "text": "So, in short, an API is a program where you can outsource some workloads from your main program. It has many advantages. Including but not limited to asynchronous programming, languages mixing."
                         }
                      ]
               },
@@ -55,19 +55,15 @@
                     [
                        {
                           "class": "title",
-                          "text": "Upgrade"
+                          "text": "API Development & Integration"
                         },
                        {
                           "class": "content",
-                          "text": "As far as upgrade goes, this page is the perfect example. It's not exactly an upgrade as I developed it this way from the beginning. But! Here's the things I want to point out. If you visit this page without a JavaScript, you'll see an error message. That's about all the HTML code I got on this webpage. Normally, a webpage/site's interface is coded in HTML and CSS. But since I wanted to be able to change the contents at will (plus the multilanguage feature), I got a little creative. And I wanted that routing feature React.js got. It took me quite a while to learn it in Vanilla JS, so didn't want to waste it."
+                          "text": "And this is where yours truly comes in handy. As stated before, I am an API developer. I code these little programs you can outsource tasks to. Because it's a completely different program, it can be coded in anything. All that matters is what can do the desired task better. So even if your program is in Java, the API can be coded in C, C#, Go, Swift or whatever. It won't affect the main program that much. The only restricting party could be the platform the API is hosted on. Apart from that, there isn't much."
                         },
                        {
                           "class": "content",
-                          "text": " Anyways, the point is, that's how I upgrade your website. I just put some classes in the HTML file (or just work with the ones we got), add my script and let it do its magic. It doesn't even have to do anything to its old features. Just adds new ones."
-                        },
-                       {
-                          "class": "content",
-                          "text": " Upgrading another kind of program would actually need more tweaks. Since I'd have to put in one or more functions in the old code (if I can import a code from another file) or open up/join a connection of some kind to reach the new program."
+                          "text": "Also, the API can be hosted almost anywhere. Even on another device. The main program just has to have access to where it is. If the API is on another device, the main program has to have access to said device one way or another. Usually, in this case, the two programs (main and API) communicate through some sort of network, interfaced by a socket."
                         }
                      ]
               },
@@ -81,7 +77,7 @@
                         },
                        {
                           "class": "content",
-                          "text": "As evidenced by this page, I'm not very good at UI designing. The only designing I have a smudge of confidence in is UX. My interfaces are almost always meant to make the program easy to use. Not make it pretty. And it's not really because I don't enjoy the nice views some apps have. But I guess I just don't got it. I don't have what it takes to make colorful designs. Be that as it may, if you give me a design, I can very well translate it into codes. The only part I'm struggling at is coming up with all those colors and how what should look like. Dark designs are easy though. Those, even I can do. You don't really have to worry about what color should go with what. Just how dark or light something should be."
+                          "text": "As evidenced by this page, I'm not very good at UI designing. The only designing I have a smudge of confidence in is UX. My interfaces are almost always meant to make the program easy to use. Not make it pretty. And it's not really because I don't enjoy the nice views some apps have. But I guess I just don't have it. I don't have what it takes to make colorful designs. Be that as it may, if you give me a design, I can very well translate it into codes. The only part I'm struggling at is coming up with all those colors and how what should look like. Dark design is easy though. Easy enough that even I can do it. You don't really have to worry about what color should go with what. Just how dark or light something should be."
                         }
                      ]
               }

@@ -3,6 +3,7 @@ body
        display: flex;
        position: relative;
        flex-direction: column-reverse;
+       overflow: hidden;
        margin: 0;
      }
 
@@ -36,9 +37,13 @@ body
 [name="landing"]
     {
        display: flex;
+       position: relative;
        flex-direction: column;
        justify-content: center;
+       background-color: #357;
        align-items: center;
+       overflow: hidden;
+       z-index: 0;
      }
 [name="landing"] .banner
     {
@@ -49,9 +54,19 @@ body
        align-items: center;
        flex-direction: column;
        justify-content: space-evenly;
-       box-shadow: 0 0 25px -1px #777;
+       box-shadow: 0 0 25px -1px #222;
+       background-color: #FFF;
        border: 1px solid #333;
        user-select: none;
+       z-index: 2;
+     }
+[name="landing"] canvas
+    {
+       position: absolute;
+       top: 0;
+       left: 0;
+       z-index: 1;
+       overflow: hidden;
      }
 
 [name="briefing"]
@@ -61,18 +76,20 @@ body
        padding-top: 25px;
        flex-direction: column;
        justify-content: space-around;
+       background-color: #062137;
        overflow: auto;
+       color: #FFF;
      }
 [name="briefing"] .paragraph
     { 
+       display: flex;
        position: relative;
-       display: block;
        margin: 10px 0;
        padding: 10px;
        padding-top: 15px;
        border: 1px solid #AAA;
-       box-shadow: 0 0 15px 1px #999;
        box-sizing: border-box;
+       flex-direction: column;
      }
 
 #main[name="skills"]

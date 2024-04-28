@@ -1,5 +1,6 @@
 import { MovePointerTo } from "/Set/Navigation.js";
 import { FillContent } from "/Set/Content.js";
+import { AnimateHome } from "/Set/Life.js";
 import { ScrollMonitor, LastScroll } from "/Set/Scroll.js";
 
 export function SetWhole (room)
@@ -38,6 +39,9 @@ export function SetWhole (room)
               FillContent (main, room);
               MovePointerTo ();
               //LastScroll ();
+
+              if (location.pathname == "/")
+                  {  AnimateHome ();  }
             }
      }
 
