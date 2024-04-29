@@ -1,24 +1,22 @@
 .hide.to.left
     {
-       display: hidden;
        right: 110%;
-       animation: hide_to_left 1s;
+       animation: hide_to_left .7s cubic-bezier(0.65, 0.05, 0.36, 1);
      }
 .hide.to.right
     {
-       display: hidden;
        right: -110%;
-       animation: hide_to_right 1s;
+       animation: hide_to_right .7s cubic-bezier(0.65, 0.05, 0.36, 1);
      }
 .show.from.left
     {
        right: 0;
-       animation: show_from_left 1s;
+       animation: show_from_left .7s cubic-bezier(0.65, 0.05, 0.36, 1);
      }
 .show.from.right
     {
        right: 0;
-       animation: show_from_right 1s;
+       animation: show_from_right .7s cubic-bezier(0.65, 0.05, 0.36, 1);
      }
 
 @keyframes hide_to_left
