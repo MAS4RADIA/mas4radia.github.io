@@ -5,7 +5,9 @@ import { ScrollMonitor, LastScroll } from "/Set/Scroll.js";
 
 export function SetWhole (room)
     {
-       var main, body, request, path;
+       var main, page, path,
+         current, body, request;
+
        body = document.body;
        main = document.getElementById ("main");
        if (main == null)
@@ -14,9 +16,19 @@ export function SetWhole (room)
               main.id = "main";
               body.appendChild (main);
             }
-       main.setAttribute ("tabindex", 0);
-       main.focus ({ preventScroll: true });
-       main.setAttribute ("name", room.path);
+
+       page = document.getElementsByClassName ("page");
+       current = page [room.path];
+       if (current == undefined)
+           {
+              current = document.createElement ("SECTION");
+              current.classList.add ("page");
+              current.setAttribute ("tabindex", 0);
+              current.setAttribute ("name", room.path);
+              main.appendChild (current);
+            }
+       FlipPage (room, main);
+       current.focus ({ preventScroll: true });
 
        path = "/Describe/Structure/";
        path += room.path + ".json";
@@ -34,9 +46,9 @@ export function SetWhole (room)
               catch (error)
                   {  console.log (error);  }
 
-              main.innerHTML = null;
-              AttachDescendants (main, content);
-              FillContent (main, room);
+              current.innerHTML = null;
+              AttachDescendants (current, content);
+              FillContent (current, room);
               MovePointerTo ();
               //LastScroll ();
 
@@ -45,7 +57,7 @@ export function SetWhole (room)
             }
      }
 
-function AttachDescendants (parent, child = null)
+async function AttachDescendants (parent, child = null)
     {
        if (child == null)
            {  return;  }
@@ -71,5 +83,42 @@ function AttachDescendants (parent, child = null)
               if (isNaN (step))
                   {  continue;  }
               AttachDescendants (parent, current [step]);
+            }
+     }
+async function FlipPage (room = null, root = null)
+    {
+       if (room == null)
+           {  return;  }
+
+       var active, page, navigation, sheet, name;
+       if (root == null)
+           {  root = document;  }
+
+       page = root.getElementsByClassName ("page");
+       page [room.path].classList.add ("active");
+       navigation = document.getElementById ("navigation");
+       if (navigation == null || navigation.children == undefined)
+           {  return;  }
+
+       navigation = navigation.children;
+       for (sheet in page)
+           {
+              if (isNaN (sheet) || !page [sheet].classList.contains ("active") || page [sheet] == page [room.path])
+                  {  continue;  }
+
+              active = page [sheet];
+              active.classList.remove ("hide", "active", "show", "from", "left", "to", "right");
+              name = active.getAttribute ("name");
+            }
+       page [room.path].classList.remove ("hide", "show", "from", "left", "to", "right");
+       if (navigation [name].offsetLeft > navigation [room.path].offsetLeft)
+           {
+              active.classList.add ("hide", "to", "right");
+              page [room.path].classList.add ("show", "from", "left");
+            }
+       else
+           {
+              active.classList.add ("hide", "to", "left");
+              page [room.path].classList.add ("show", "from", "right");
             }
      }

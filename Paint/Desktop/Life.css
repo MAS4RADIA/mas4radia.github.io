@@ -1,0 +1,50 @@
+.hide.to.left
+    {
+       right: 110%;
+       animation: hide_to_left 1s;
+     }
+.hide.to.right
+    {
+    
+       right: -110%;
+       animation: hide_to_right 1s;
+     }
+.show.from.left
+    {
+       right: 0;
+       animation: show_from_left 1s;
+     }
+.show.from.right
+    {
+       right: 0;
+       animation: show_from_right 1s;
+     }
+
+@keyframes hide_to_left
+    {
+       0%
+           {  right: 0;  }
+       100%
+           {  right: 110%;  }
+     }
+@keyframes hide_to_right
+    {
+       0%
+           {  right: 0;  }
+       100%
+           {  right: -110%;  }
+     }
+@keyframes show_from_left
+    {
+       0%
+           {  right: 110%;  }
+       100%
+           {  right: 0;  }
+     }
+@keyframes show_from_right
+    {
+       0%
+           {  right: -110%;  }
+       100%
+           {  right: 0;  }
+     }

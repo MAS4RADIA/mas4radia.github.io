@@ -39,7 +39,7 @@ function SetSize (canvas = null)
            {  return;  }
 
        var banner, reference, radius, brush, origin;
-       reference = canvas.parentNode;
+       reference = canvas.parentElement;
        canvas.width = reference.offsetWidth;
        canvas.height = reference.offsetHeight;
 

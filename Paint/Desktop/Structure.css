@@ -21,13 +21,24 @@ body
        box-shadow: 0 3px 10px -5px #333;
      }
 
-#main
+#main, .page
     {
+       width: 100%;
        height: 100%;
        overflow-x: hidden;
        overflow-y: auto;
      }
-#main > section
+#main
+    {
+       display: flex;
+       flex-direction: row;
+       overflow: hidden;
+     }
+.page
+    {
+       position: absolute;
+     }
+.page > section
     {
        min-height: 100%;
        box-sizing: border-box;
@@ -54,7 +65,7 @@ body
        align-items: center;
        flex-direction: column;
        justify-content: space-evenly;
-       box-shadow: 0 0 25px -1px #222;
+       box-shadow: 0 0 15px -1px #222;
        background-color: #FFF;
        border: 1px solid #333;
        user-select: none;
@@ -66,7 +77,8 @@ body
        top: 0;
        left: 0;
        z-index: 1;
-       overflow: hidden;
+       width: 100%;
+       height: 100%;
      }
 
 [name="briefing"]
@@ -92,7 +104,7 @@ body
        flex-direction: column;
      }
 
-#main[name="skills"]
+.page[name="skills"]
     {
        display: flex;
        padding: 5px;
@@ -103,7 +115,7 @@ body
        box-sizing: border-box;
      }
 
-#main[name="skills"] .skillset
+.page[name="skills"] .skillset
     {
        position: relative;
        display: flex;
@@ -116,20 +128,20 @@ body
        align-items: flex-start;
        flex-direction: column;
      }
-#main[name="skills"] .skill
+.page[name="skills"] .skill
     {
        display: flex;
        width: 100%;
        justify-content: space-between;
      }
-#main[name="skills"] .skill .label
+.page[name="skills"] .skill .label
     {
        display: flex;
        max-width: 50%;
        margin-right: 10px;
        justify-content: space-between;
      }
-#main[name="skills"] .skill .level
+.page[name="skills"] .skill .level
     {
        width: 50%;
      }
