@@ -1,11 +1,12 @@
 .hide.to.left
     {
+       display: hidden;
        right: 110%;
        animation: hide_to_left 1s;
      }
 .hide.to.right
     {
-    
+       display: hidden;
        right: -110%;
        animation: hide_to_right 1s;
      }
