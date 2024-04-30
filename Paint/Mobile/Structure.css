@@ -22,3 +22,10 @@
               display: none;
             }
      }
+@media screen and (max-width: 770px)
+    {
+       .page[name="skills"]
+           {
+              flex-wrap: nowrap;
+            }
+     }
