@@ -1,0 +1,24 @@
+[
+   {
+      "class": "trait",
+      "nested":
+          [
+             {
+                "class": "title",
+                "text": "Summary"
+              },
+             {
+                "class": "description",
+                "text": "I am an inventor's soul born into the digital era; the inventors' paradise. Creating things has never been easier. All you need now are your mind and a few strokes (both meaning)."
+              },
+             {
+                "class": "description",
+                "text": "As an inventor, I'd like to know exactly how the ingredients I am working with, well, ...work. As the main ingredient in digital creation is programming. I have been dedicating myself to knowing more about the craft ever since I bumped into it. Second ingredient being ideas, there isn't much to be done."
+              },
+             {
+                "class": "description",
+                "text": "Then come the tools. There are two of them; programming language and the inventor's mind. No matter how well you know your ingredients, you will never get anything out of it if you don't know how to use the proper tools."
+              }
+           ]
+    }
+ ]

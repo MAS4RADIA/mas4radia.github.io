@@ -1,0 +1,17 @@
+[
+   {
+      "nature": "SECTION",
+      "class": "trait",
+      "nested":
+          [
+             {
+                "nature": "SPAN",
+                "class": "title"
+              },
+             {
+                "nature": "SPAN",
+                "class": "description"
+              }
+           ]
+    }
+ ]

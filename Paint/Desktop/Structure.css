@@ -107,43 +107,48 @@ body
 
 .page[name="skills"]
     {
-       display: flex;
        padding: 5px;
        width: 100%;
        min-height: 100%;
-       flex-wrap: wrap;
        flex-direction: column;
        box-sizing: border-box;
+       background-color: #111;
+       color: #FFF;
      }
 
 .page[name="skills"] .skillset
     {
-       position: relative;
        display: flex;
+       flex-direction: column;
+       position: relative;
        padding: 5px;
        margin: 5px;
        min-width: 370px;
        min-height: min-content;
-       border-radius: 5px;
        border: 1px solid #777;
-       flex-direction: column;
-       align-items: flex-start;
+       border-radius: 5px;
        overflow: unset;
      }
 .page[name="skills"] .skill
     {
-       display: flex;
        width: 100%;
        justify-content: space-between;
      }
 .page[name="skills"] .skill .label
     {
-       display: flex;
        max-width: 50%;
        margin-right: 10px;
-       justify-content: space-between;
      }
 .page[name="skills"] .skill .level
     {
        width: 50%;
+     }
+
+.page[name="personality"]
+    {
+     }
+.page[name="personality"] .trait
+    {
+       display: flex;
+       flex-direction: column;
      }

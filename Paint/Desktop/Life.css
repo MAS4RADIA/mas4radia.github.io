@@ -1,11 +1,11 @@
 .hide.to.left
     {
-       right: 110%;
+       right: 100%;
        animation: hide_to_left .7s cubic-bezier(0.65, 0.05, 0.36, 1);
      }
 .hide.to.right
     {
-       right: -110%;
+       right: -100%;
        animation: hide_to_right .7s cubic-bezier(0.65, 0.05, 0.36, 1);
      }
 .show.from.left
@@ -24,26 +24,26 @@
        0%
            {  right: 0;  }
        100%
-           {  right: 110%;  }
+           {  right: 100%;  }
      }
 @keyframes hide_to_right
     {
        0%
            {  right: 0;  }
        100%
-           {  right: -110%;  }
+           {  right: -100%;  }
      }
 @keyframes show_from_left
     {
        0%
-           {  right: 110%;  }
+           {  right: 100%;  }
        100%
            {  right: 0;  }
      }
 @keyframes show_from_right
     {
        0%
-           {  right: -110%;  }
+           {  right: -100%;  }
        100%
            {  right: 0;  }
      }

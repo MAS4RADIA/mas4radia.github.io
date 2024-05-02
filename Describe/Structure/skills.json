@@ -29,9 +29,8 @@
                                ]
                         },
                        {
-                          "nature": "PROGRESS",
-                          "class": "level",
-                          "max": 100
+                          "nature": "SPAN",
+                          "class": "content"
                         }
                      ]
               }

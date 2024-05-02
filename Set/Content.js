@@ -75,6 +75,9 @@ function MarkContent (main = null, structure = null)
                   {
                      index = 0;
                      child = main.getElementsByClassName (property);
+                     if (child == null)
+                         {  continue;  }
+
                      if (child.length > value)
                          {  index = value;  }
                      if (child.length <= done [property])
@@ -90,9 +93,11 @@ function MarkContent (main = null, structure = null)
               done [property] ++;
             }
      }
-function Template (node)
+function Template (node = null)
     {
-       if (node.length != undefined)
+       if (node == null)
+           {  return;  }
+       if (node.length > 0)
            {  node = node [0];  }
        if (node.tagName == undefined)
            {  return;  }
