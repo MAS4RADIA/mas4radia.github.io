@@ -112,7 +112,7 @@ body
        min-height: 100%;
        flex-direction: column;
        box-sizing: border-box;
-       background-color: #111;
+       background-color: #0C2D48;
        color: #FFF;
      }
 
@@ -123,7 +123,6 @@ body
        position: relative;
        padding: 5px;
        margin: 5px;
-       min-width: 370px;
        min-height: min-content;
        border: 1px solid #777;
        border-radius: 5px;
@@ -131,17 +130,12 @@ body
      }
 .page[name="skills"] .skill
     {
+       display: flex;
        width: 100%;
-       justify-content: space-between;
-     }
-.page[name="skills"] .skill .label
-    {
-       max-width: 50%;
-       margin-right: 10px;
-     }
-.page[name="skills"] .skill .level
-    {
-       width: 50%;
+       padding: 0 5px;
+       flex-direction: column;
+       box-sizing: border-box;
+       user-select: none;
      }
 
 .page[name="personality"]

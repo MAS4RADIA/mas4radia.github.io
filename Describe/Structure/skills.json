@@ -24,13 +24,14 @@
                                   },
                                  {
                                     "nature": "SPAN",
-                                    "class": "extra"
+                                    "class": "extra",
+                                    "text": "&#x25BE;"
                                   }
                                ]
                         },
                        {
                           "nature": "SPAN",
-                          "class": "content"
+                          "class": "hidden retractable content"
                         }
                      ]
               }

@@ -1,3 +1,5 @@
+import { ReadyBlinds } from "/Set/Retractable.js";
+
 export function FillContent (main = null, room = null)
     {
        if (main == null || room == null || main.tagName == undefined || room.language == undefined || room.path == undefined)
@@ -26,6 +28,7 @@ export function FillContent (main = null, room = null)
               if (name != null)
                   {  name.innerHTML = room.name;  }
               MarkContent (main, structure);
+              ReadyBlinds ();
             }
      }
 
@@ -112,13 +115,16 @@ function Template (node = null)
               if (node == null)
                   {  return;  }
 
-              var child, element,
+              var child, element, text,
                 parent, sibling, thing;
               child = node.children;
 
               if (child.length < 1 && node.tagName != undefined)
                   {
                      node.innerHTML = null;
+                     text = node.getAttribute ("text");
+                     if (text != undefined)
+                         {  node.innerHTML = text;  }
                      if (node.parentNode == undefined)
                          {  return (node);  }
                      parent = node.parentNode;

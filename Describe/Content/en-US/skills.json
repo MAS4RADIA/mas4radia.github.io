@@ -17,7 +17,11 @@
                         },
                        {
                           "class": "content",
-                          "text": ""
+                          "text": "Malagasy dialect: SAVA and Toamasina variants."
+                        },
+                       {
+                          "class": "content",
+                          "text": "First language: Fluent."
                         }
                      ]
               },
@@ -31,7 +35,11 @@
                         },
                        {
                           "class": "content",
-                          "text": ""
+                          "text": "US variant."
+                        },
+                       {
+                          "class": "content",
+                          "text": "Third language: Fluent."
                         }
                      ]
               },
@@ -45,7 +53,11 @@
                         },
                        {
                           "class": "content",
-                          "text": ""
+                          "text": "France variant"
+                        },
+                       {
+                          "class": "content",
+                          "text": "Second language: Fluent."
                         }
                      ]
               }
@@ -69,7 +81,7 @@
                         },
                        {
                           "class": "content",
-                          "text": ""
+                          "text": "Algorithm is one of the building blocks of any programming activity."
                         }
                      ]
               },
@@ -83,7 +95,7 @@
                         },
                        {
                           "class": "content",
-                          "text": ""
+                          "text": "Socket programming; a method used to connect programs in a network."
                         }
                      ]
               },
@@ -97,7 +109,7 @@
                         },
                        {
                           "class": "content",
-                          "text": ""
+                          "text": "A program used to perform a particular task for another program to use."
                         }
                      ]
               },
@@ -111,7 +123,7 @@
                         },
                        {
                           "class": "content",
-                          "text": ""
+                          "text": "A tool to communicate with computers. Where algorithms are used."
                         }
                      ]
               }
@@ -135,7 +147,21 @@
                         },
                        {
                           "class": "content",
-                          "text": ""
+                          "text": "The ability to learn something new and apply it to existing knowledges, creating a blend of both."
+                        }
+                     ]
+              },
+             {
+                "class": "skill",
+                "nested":
+                    [
+                       {
+                          "class": "name",
+                          "text": "Adaptability"
+                        },
+                       {
+                          "class": "content",
+                          "text": "The ability to adjust to foreign and unfamiliar environment quickly."
                         }
                      ]
               },
@@ -149,7 +175,7 @@
                         },
                        {
                           "class": "content",
-                          "text": ""
+                          "text": "The ability to perceive and assess oneself as a third person."
                         }
                      ]
               },
@@ -160,6 +186,22 @@
                        {
                           "class": "name",
                           "text": "Logical reasoning"
+                        },
+                       {
+                          "class": "content",
+                          "text": "Deductive"
+                        },
+                       {
+                          "class": "content",
+                          "text": "Inductive"
+                        },
+                       {
+                          "class": "content",
+                          "text": "Abductive"
+                        },
+                       {
+                          "class": "content",
+                          "text": "Analogical"
                         }
                      ]
               }

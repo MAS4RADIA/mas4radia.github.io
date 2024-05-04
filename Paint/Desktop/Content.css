@@ -44,18 +44,26 @@
        margin-bottom: 5px;
        padding: 2px 10px;
        color: #FFF;
-       background-color: #15F;
+       background-color: #189AB4;
        border-radius: 10px;
      }
 [name="skills"] .skillset .label
     {
+       display: flex;
        min-width: 25%;
        max-width: 100%;
+       padding: 0 5px;
+       border-radius: 5px;
+       justify-content: space-between;
+       box-sizing: border-box;
+       cursor: pointer;
      }
-[name="skills"] .skillset .level
+[name="skills"] .skill .label:hover
     {
+       background-color: #0E86D4;
      }
 
-[name="personality"] .trait .title
+[name="skills"] .skill .content
     {
+       padding: 0 20px;
      }

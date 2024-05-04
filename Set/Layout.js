@@ -71,7 +71,11 @@ async function AttachDescendants (parent, child = null)
               delete child.nested;
 
               for (name in child)
-                  {  fixed.setAttribute (name, child [name]);  }
+                  {
+                     if (name == "text")
+                         {  fixed.innerHTML = child [name];  }
+                     fixed.setAttribute (name, child [name]);
+                   }
               parent.appendChild (fixed);
               parent = fixed;
             }

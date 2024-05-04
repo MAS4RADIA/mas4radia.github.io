@@ -1,3 +1,11 @@
+.hidden.retractable
+    {  display: none;  }
+.reverse .extra
+    {  transform: rotate(180deg);  }
+
+[name="skills"] .skill .label .extra
+    {  transition: all 1s;  }
+
 .hide.to.left
     {
        right: 100%;
