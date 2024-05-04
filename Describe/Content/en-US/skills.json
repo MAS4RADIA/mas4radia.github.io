@@ -189,19 +189,7 @@
                         },
                        {
                           "class": "content",
-                          "text": "Deductive"
-                        },
-                       {
-                          "class": "content",
-                          "text": "Inductive"
-                        },
-                       {
-                          "class": "content",
-                          "text": "Abductive"
-                        },
-                       {
-                          "class": "content",
-                          "text": "Analogical"
+                          "text": "Deductive, inductive, abductive and analogical"
                         }
                      ]
               }
