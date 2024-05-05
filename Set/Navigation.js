@@ -81,6 +81,8 @@ export function SetNavigation (room)
               if (hop == "introduction")
                   {  hop = "/";  }
 
+              if (hop [0] != "/")
+                  {  hop = "/" + hop;  }
               history.pushState (null, null, hop);
               Switch ();
             }
