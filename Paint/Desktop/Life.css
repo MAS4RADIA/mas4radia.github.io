@@ -1,10 +1,21 @@
+.skill .label
+    {
+       z-index: 2;
+     }
+.retractable
+    {
+       overflow-y: hidden;
+       transition: height .5s;
+     }
 .hidden.retractable
-    {  display: none;  }
+    {
+       height: 0;
+     }
 .reverse .extra
     {  transform: rotate(180deg);  }
 
 [name="skills"] .skill .label .extra
-    {  transition: all 1s;  }
+    {  transition: all .5s;  }
 
 .hide.to.left
     {
@@ -27,6 +38,19 @@
        animation: show_from_right .7s cubic-bezier(0.65, 0.05, 0.36, 1);
      }
 
+@keyframes hide_to_top
+    {
+       0%
+           {
+              display: unset;
+              max-height: 40px;
+            }
+       100%
+           {
+              display: none;
+              max-height: 0;
+            }
+     }
 @keyframes hide_to_left
     {
        0%
@@ -40,6 +64,19 @@
            {  right: 0;  }
        100%
            {  right: -100%;  }
+     }
+@keyframes show_from_top
+    {
+       0%
+           {
+              display: none;
+              max-height: 0;
+            }
+       100%
+           {
+              display: unset;
+              max-height: 40px;
+            }
      }
 @keyframes show_from_left
     {

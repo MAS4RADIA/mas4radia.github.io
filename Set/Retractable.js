@@ -8,8 +8,13 @@ export function ReadyBlinds ()
               if (isNaN (content))
                   {  continue;  }
 
-              var shutter, root, label;
+              var shutter, root, label, height;
               shutter = retractable [content];
+              height = shutter.offsetHeight;
+              if (height > 0)
+                  {  shutter.setAttribute ("height", height);  }
+              shutter.classList.add ("hidden");
+
               root = shutter.parentElement;
               if (root == undefined)
                   {  continue;  }
@@ -38,17 +43,27 @@ function RollBlinds ()
               if (isNaN (content))
                   {  continue;  }
 
-              var shutter;
+              var shutter, height;
               shutter = retractable [content];
               if (shutter.classList.contains ("hidden"))
                   {
                      shutter.classList.remove ("hidden");
                      this.classList.add ("reverse");
+
+                     height = shutter.getAttribute ("height");
+                     if (height == null)
+                         {  continue;  }
+                     shutter.style.setProperty ("height", height + "px");
                    }
               else
                   {
-                     shutter.classList.add ("hidden");
+                     shutter.removeAttribute ("style");
                      this.classList.remove ("reverse");
+                     shutter.classList.add ("hidden");
+                     height = shutter.offsetHeight;
+                     if (height > 1)
+                         {  continue;  }
+                     shutter.setAttribute ("height", height);
                    }
             }
        //console.log (retractable);

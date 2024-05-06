@@ -86,7 +86,6 @@ function MarkContent (main = null, structure = null)
                      if (child.length <= done [property])
                          {
                             addition = Template (child);
-                            main.appendChild (addition);
                             child = addition;
                           }
                      else
@@ -105,9 +104,12 @@ function Template (node = null)
        if (node.tagName == undefined)
            {  return;  }
 
-       var raw, clean;
+       var raw, clean, parent;
        raw = node.cloneNode (true);
        clean = ClearContents (raw);
+
+       parent = node.parentNode;
+       parent.appendChild (clean);
        return (clean);
 
        function ClearContents (node = null)

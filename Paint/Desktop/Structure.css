@@ -130,6 +130,7 @@ body
      }
 .page[name="skills"] .skill
     {
+       position: relative;
        display: flex;
        width: 100%;
        padding: 0 5px;

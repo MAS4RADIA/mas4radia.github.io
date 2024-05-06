@@ -9,7 +9,7 @@
                 "class": "title"
               },
              {
-                "nature": "DIV",
+                "nature": "SECTION",
                 "class": "skill",
                 "nested":
                     [
@@ -30,8 +30,15 @@
                                ]
                         },
                        {
-                          "nature": "SPAN",
-                          "class": "hidden retractable content"
+                          "nature": "SECTION",
+                          "class": "retractable",
+                          "nested":
+                              [
+                                 {
+                                    "nature": "DIV",
+                                    "class": "content"
+                                  }
+                               ]
                         }
                      ]
               }
