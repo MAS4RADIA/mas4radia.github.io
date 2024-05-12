@@ -1,16 +1,41 @@
 [
    {
       "nature": "SECTION",
-      "class": "trait",
+      "class": "window list",
       "nested":
           [
              {
-                "nature": "SPAN",
-                "class": "title"
-              },
+                "nature": "SECTION",
+                "class": "trait",
+                "nested":
+                    [
+                       {
+                          "nature": "SPAN",
+                          "class": "title"
+                        },
+                       {
+                          "nature": "DIV",
+                          "class": "description",
+                          "nested":
+                              [
+                                 {
+                                    "nature": "SPAN",
+                                    "class": "content"
+                                  }
+                               ]
+                        }
+                     ]
+              }
+           ]
+    },
+   {
+      "nature": "SECTION",
+      "class": "board",
+      "nested":
+          [
              {
-                "nature": "SPAN",
-                "class": "description"
+                "nature": "SECTION",
+                "class": "widget"
               }
            ]
     }

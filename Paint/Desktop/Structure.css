@@ -89,6 +89,7 @@ body
        padding-top: 25px;
        flex-direction: column;
        justify-content: space-around;
+       min-height: fit-content !important;
        background-color: #062137;
        overflow: auto;
        color: #FFF;
@@ -141,9 +142,36 @@ body
 
 .page[name="personality"]
     {
+       display: flex;
+       height: 100%;
+       overflow: hidden;
+       flex-direction: row;
      }
-.page[name="personality"] .trait
+.page[name="personality"] .list
     {
        display: flex;
+       margin: 25px;
+       padding: 5px 0;
+       overflow-y: auto;
+       overflow-x: hidden;
+       border-radius: 5px;
+       border: 1px solid #999;
+       align-self: flex-start;
        flex-direction: column;
+       min-width: fit-content;
+       min-height: fit-content;
+       box-shadow: 0 0 15px -5px #AAA;
+       box-sizing: border-box;
+     }
+[name="personality"] .board
+    {
+       position: relative;
+       display: flex;
+       width: 100%;
+       align-items: center;
+       justify-content: center;
+     }
+[name="personality"] .widget
+    {
+       width: 20em;
      }

@@ -5,19 +5,61 @@
           [
              {
                 "class": "title",
-                "text": "Summary"
+                "text": "Curiousity"
               },
              {
-                "class": "description",
-                "text": "I am an inventor's soul born into the digital era; the inventors' paradise. Creating things has never been easier. All you need now are your mind and a few strokes (both meaning)."
+                "class": "content",
+                "text": "I have always been a curious kid. When I take interest in something, I always wonder &#x201C;how does this work?&#x201D;"
               },
              {
-                "class": "description",
-                "text": "As an inventor, I'd like to know exactly how the ingredients I am working with, well, ...work. As the main ingredient in digital creation is programming. I have been dedicating myself to knowing more about the craft ever since I bumped into it. Second ingredient being ideas, there isn't much to be done."
+                "class": "content",
+                "text": "And most time than not, I try to find out how it actually works. And that's, I think, is what granted me the ability to understand how things work."
+              }
+           ]
+    },
+   {
+      "class": "trait",
+      "nested":
+          [
+             {
+                "class": "title",
+                "text": "Perfectionism"
               },
              {
-                "class": "description",
-                "text": "Then come the tools. There are two of them; programming language and the inventor's mind. No matter how well you know your ingredients, you will never get anything out of it if you don't know how to use the proper tools."
+                "class": "content",
+                "text": "I am someone with a massive ego so I want my creations to be as perfect as can be. If it were up to me, I'd obviously make it perfect but what is."
+              },
+             {
+                "class": "content",
+                "text": "This particular trait actually brings about some of my major flaws. It makes working others challenging. If I do not think they are up to the task or are doing their job half-heartedly. I have a high expectation standard for myself and the people I work with. If I believe the others are gonna drag me down. I would rather do it all by myself."
+              },
+             {
+                "class": "content",
+                "text": "Which isn't always the best idea."
+              }
+           ]
+    },
+   {
+      "class": "trait",
+      "nested":
+          [
+             {
+                "class": "title",
+                "text": "Simplicity"
+              }
+           ]
+    },
+   {
+      "class": "trait",
+      "nested":
+          [
+             {
+                "class": "title",
+                "text": "Playful sarcasm"
+              },
+             {
+                "class": "content",
+                "text": "As the name suggests, I am both playful and sarcastic. Resulting in occasional friendly jabs."
               }
            ]
     }

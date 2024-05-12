@@ -89,7 +89,7 @@ async function AttachDescendants (parent, child = null)
               AttachDescendants (parent, current [step]);
             }
      }
-async function FlipPage (room = null, root = null)
+function FlipPage (room = null, root = null)
     {
        if (room == null)
            {  return;  }
@@ -115,6 +115,9 @@ async function FlipPage (room = null, root = null)
               name = active.getAttribute ("name");
             }
        page [room.path].classList.remove ("hide", "show", "from", "left", "to", "right");
+       if (navigation [name] == undefined)
+           {  return;  }
+
        if (navigation [name].offsetLeft > navigation [room.path].offsetLeft)
            {
               active.classList.add ("hide", "to", "right");

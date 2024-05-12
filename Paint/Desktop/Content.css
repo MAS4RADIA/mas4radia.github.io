@@ -58,12 +58,28 @@
        box-sizing: border-box;
        cursor: pointer;
      }
-[name="skills"] .skill .label:hover
-    {
-       background-color: #0E86D4;
-     }
-
+[name="skills"] .skillset .label:hover
+     {
+        background-color: #0E86D4;
+      }
 [name="skills"] .skill .content
     {
        padding: 0 20px;
      }
+
+[name="personality"] .list .trait
+    {
+       padding: 3px 15px;
+       user-select: none;
+       cursor: pointer;
+     }
+[name="personality"] .list .trait:hover
+    {  background-color: #CCC;  }
+[name="personality"] .list .active.trait
+    {
+       background-color: #333;
+       color: #FFF;
+     }
+
+[name="personality"] .list .trait .description
+    {  display: none;  }
