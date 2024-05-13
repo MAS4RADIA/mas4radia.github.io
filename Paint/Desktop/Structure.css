@@ -173,5 +173,11 @@ body
      }
 [name="personality"] .widget
     {
-       width: 20em;
+       display: flex;
+       border-radius: 5px;
+       flex-direction: column;
+       border: 1px solid #999;
+       box-sizing: border-box;
+       box-shadow: 0 0 15px -5px #AAA;
+       transition: all .5s;
      }

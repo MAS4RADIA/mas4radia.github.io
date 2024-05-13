@@ -83,3 +83,16 @@
 
 [name="personality"] .list .trait .description
     {  display: none;  }
+
+[name="personality"] .widget > *
+    {
+       padding: 5px 10px;
+       box-sizing: border-box;
+     }
+[name="personality"] .widget .title
+    {
+       border-top-left-radius: 3px;
+       border-top-right-radius: 3px;
+       background-color: #268;
+       color: #FFF;
+     }
