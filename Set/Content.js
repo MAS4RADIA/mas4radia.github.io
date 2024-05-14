@@ -29,8 +29,8 @@ export function FillContent (main = null, room = null)
               if (name != null)
                   {  name.innerHTML = room.name;  }
               MarkContent (main, structure);
+              SetWindows (main);
               ReadyBlinds ();
-              SetWindows ();
             }
      }
 

@@ -18,7 +18,6 @@ body
        user-select: none;
        text-align: right;
        box-sizing: border-box;
-       box-shadow: 0 3px 10px -5px #333;
      }
 
 #main, .page
@@ -66,7 +65,6 @@ body
        align-items: center;
        flex-direction: column;
        justify-content: space-evenly;
-       box-shadow: 0 0 15px -1px #222;
        background-color: #FFF;
        border: 1px solid #333;
        user-select: none;
@@ -160,10 +158,9 @@ body
        flex-direction: column;
        min-width: fit-content;
        min-height: fit-content;
-       box-shadow: 0 0 15px -5px #AAA;
        box-sizing: border-box;
      }
-[name="personality"] .board
+.page[name="personality"] .board
     {
        position: relative;
        display: flex;
@@ -171,13 +168,39 @@ body
        align-items: center;
        justify-content: center;
      }
-[name="personality"] .widget
+.page[name="personality"] .widget
     {
        display: flex;
        border-radius: 5px;
        flex-direction: column;
        border: 1px solid #999;
        box-sizing: border-box;
-       box-shadow: 0 0 15px -5px #AAA;
        transition: all .5s;
+     }
+
+.page[name="hobbies"]
+    {
+       display: flex;
+       flex-direction: row;
+       justify-content: space-evenly;
+     }
+.page[name="hobbies"] .list
+    {
+       display: flex;
+       width: 350px;
+       min-width: fit-content;
+       justify-content: center;
+       align-items: center;
+     }
+.page[name="hobbies"] .list .window
+    {
+       padding: 5px 0;
+       border: 1px solid #999;
+       border-radius: 5px;
+     }
+.page[name="hobbies"] .board
+    {
+       width: 100%;
+       padding: 15px;
+       box-sizing: border-box;
      }

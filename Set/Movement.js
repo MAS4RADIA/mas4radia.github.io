@@ -1,10 +1,13 @@
 window.addEventListener ("resize", ResizeWindow);
 
 var board;
-export function SetWindows ()
+export function SetWindows (parent = null)
     {
+       if (parent == null || parent.tagName == undefined)
+           {  return;  }
+
        var list, item;
-       list = document.getElementsByClassName ("window") [0];
+       list = parent.getElementsByClassName ("window") [0];
        if (list == undefined)
            {  return;  }
        list = list.children;
@@ -30,12 +33,6 @@ function SwitchActive (list = null)
        var name, old, item, hash, parent, title;
        title = active.getElementsByClassName ("title") [0];
        if (title == undefined)
-           {  return;  }
-
-       name = title.innerText;
-       name = name.replace (" ", "_");
-       hash = name.toLowerCase ();
-       if (location.hash == hash)
            {  return;  }
 
        parent = active.parentNode;
@@ -68,16 +65,17 @@ function OpenWindow (active = null)
        if (active == null)
            {  return;  }
 
-       var root, parent;
-       parent = active.parentNode;
-       if (parent == undefined)
-           {  return;  }
+       var root = active;
+       while (root.parentNode != document.body)
+           {
+              if (root == undefined)
+                  {  return;  }
 
-       root = parent.parentNode;
-       if (root == undefined || root.innerHTML == undefined)
-           {  return;  }
-
-       board = root.getElementsByClassName ("widget") [0];
+              root = root.parentNode;
+              board = root.getElementsByClassName ("widget") [0];
+              if (board != undefined)
+                  {  break;  }
+            }
        if (board == undefined)
            {  return;  }
 
@@ -86,7 +84,7 @@ function OpenWindow (active = null)
      }
 function ResizeWindow ()
     {
-       if (board == null || board.tagName == undefined)
+       if (board == null || board.classList == undefined || !board.classList.contains ("windowed"))
            {  return;  }
 
        var raw, width, clean, area, height;

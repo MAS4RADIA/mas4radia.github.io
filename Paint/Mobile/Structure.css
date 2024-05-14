@@ -28,4 +28,8 @@
            {
               flex-wrap: nowrap;
             }
+       .page[name="personality"]
+           {
+              flex-direction: column;
+            }
      }

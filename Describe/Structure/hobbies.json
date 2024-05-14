@@ -11,7 +11,7 @@
                     [
                        {
                           "nature": "SECTION",
-                          "class": "trait",
+                          "class": "hobby",
                           "nested":
                               [
                                  {
@@ -26,6 +26,17 @@
                                            {
                                               "nature": "SPAN",
                                               "class": "content"
+                                            },
+                                           {
+                                              "nature": "DIV",
+                                              "class": "gallery",
+                                              "nested":
+                                                  [
+                                                     {
+                                                        "nature": "SPAN",
+                                                        "class": "sample"
+                                                      }
+                                                   ]
                                             }
                                          ]
                                   }
@@ -42,7 +53,7 @@
           [
              {
                 "nature": "SECTION",
-                "class": "windowed widget"
+                "class": "widget"
               }
            ]
     }

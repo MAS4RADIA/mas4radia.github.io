@@ -1,0 +1,40 @@
+[
+   {
+      "class": "hobby",
+      "nested":
+          [
+             {
+                "class": "title",
+                "text": "Exprimenting"
+              },
+             {
+                "class": "content",
+                "text": "What's more fun than finding out how things work and how it actually does? I love putting things together and making up new things."
+              }
+           ]
+    },
+   {
+      "class": "hobby",
+      "nested":
+          [
+             {
+                "class": "title",
+                "text" : "Coding"
+              },
+             {
+                "class": "content",
+                "text": "Coding"
+              }
+           ]
+    },
+   {
+      "class": "hobby",
+      "nested":
+          [
+             {
+                "class": "title",
+                "text": "Drawing"
+              }
+           ]
+    }
+ ]
