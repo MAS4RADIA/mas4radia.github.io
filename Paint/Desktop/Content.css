@@ -143,3 +143,65 @@
        overflow-x: hidden;
        border-top: 1px solid #999;
      }
+
+/* ------------------------------------------------
+------------------------------------------------ */
+.page[name="contact"] .card .centered
+    {
+       width: 50%;
+     }
+.page[name="contact"] .card .centered .logo
+    {  cursor: pointer;  }
+.page[name="contact"] .card .centered .logo:first-child
+    {
+       font-size: 180%;
+       font-family: sans-serif;
+     }
+.page[name="contact"] .card .centered .stripe
+    {
+       margin: 5px 0;
+       padding: 1px;
+       width: 100%;
+       border: 2px solid;
+       border-left: none;
+       border-right: none;
+     }
+.page[name="contact"] .card :where(.header, .footer)
+    {
+       position: absolute;
+       display: flex;
+       bottom: 0;
+       width: 100%;
+       height: 40px;
+       padding: 0 25px;
+       box-sizing: border-box;
+       justify-content: space-between;
+       align-items: center;
+     }
+.page[name="contact"] .card .header
+    {
+       top: 0;
+       flex-direction: row-reverse;
+     }
+.page[name="contact"] .card .link
+    {
+       position: relative;
+       cursor: pointer;
+       transition: all 1s;
+     }
+.page[name="contact"] .card .link::after
+    {
+       content: " ";
+       position: absolute;
+       bottom: 0;
+       left: 50%;
+       width: 0;
+       height: 2px;
+       transition: width .3s;
+       background-color: #37F;
+       transform: translateX(-50%);
+     }
+.page[name="contact"] .card .link:hover::after
+    {
+       width: 100%;
+     }

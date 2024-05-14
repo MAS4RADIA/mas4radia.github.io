@@ -1,6 +1,52 @@
 [
    {
-      "name": "contact",
-      "text": "mas4radia@gmail.com"
+      "class": "card",
+      "nested":
+          [
+             {
+                "class": "header",
+                "nested":
+                    [
+                       {
+                          "class": "link",
+                          "text": "Message"
+                        }
+                     ]
+              },
+             {
+                "class": "logo",
+                "text": "3&#x00B0; Corp"
+              },
+             {
+                "class": "logo",
+                "text": "MAS4RADIA"
+              },
+             {
+                "class": "footer",
+                "nested":
+                    [
+                       {
+                          "class": "link",
+                          "text": "Visit 3&#x00B0; Corp"
+                        },
+                       {
+                          "class": "link",
+                          "text": "Flip"
+                        }
+                     ]
+              }
+           ]
+    },
+   {
+      "class": "card",
+      "nested":
+          [
+           ]
+    },
+   {
+      "class": "card",
+      "nested":
+          [
+           ]
     }
  ]

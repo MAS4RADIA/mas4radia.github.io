@@ -204,3 +204,30 @@ body
        padding: 15px;
        box-sizing: border-box;
      }
+
+.page[name="contact"] .card
+    {
+       position: absolute;
+       top: 50%;
+       left: 50%;
+       min-width: 500px;
+       min-height: 300px;
+       border-radius: 10px;
+       background-color: #334;
+       transform: translate(-50%, -50%);
+       box-shadow: 0 0 15px -5px #999;
+       color: #37F;
+     }
+.page[name="contact"] .hidden
+    {  display: none;  }
+
+.page[name="contact"] .card .centered
+    {
+       display: flex;
+       position: absolute;
+       top: 50%;
+       left: 50%;
+       align-items: center;
+       flex-direction: column;
+       transform: translate(-50%, -50%);
+     }

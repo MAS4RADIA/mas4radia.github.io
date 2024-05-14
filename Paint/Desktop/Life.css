@@ -14,9 +14,13 @@
 .reverse .extra
     {  transform: rotate(180deg);  }
 
-[name="skills"] .skill .label .extra
+.page[name="skills"] .skill .label .extra
     {  transition: all .5s;  }
 
+.page[name="contact"] .card
+    {  transition: all .5s;  }
+/* --------------------------------------
+------------------------------------- */
 .hide.to.left
     {
        right: 100%;
@@ -37,7 +41,12 @@
        right: 0;
        animation: show_from_right .7s cubic-bezier(0.65, 0.05, 0.36, 1);
      }
-
+.page.flip.right
+    {
+       background-color: red;
+     }
+/* ------------------------------------------
+------------------------------------------ */
 @keyframes hide_to_top
     {
        0%
