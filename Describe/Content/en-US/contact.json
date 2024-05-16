@@ -1,6 +1,7 @@
 [
    {
       "class": "card",
+      "name": "face",
       "nested":
           [
              {
@@ -9,6 +10,7 @@
                     [
                        {
                           "class": "link",
+                          "name": "contact_form",
                           "text": "Message"
                         }
                      ]
@@ -19,6 +21,7 @@
               },
              {
                 "class": "logo",
+                "name": "back",
                 "text": "MAS4RADIA"
               },
              {
@@ -31,6 +34,7 @@
                         },
                        {
                           "class": "link",
+                          "name": "back",
                           "text": "Flip"
                         }
                      ]
@@ -39,14 +43,61 @@
     },
    {
       "class": "card",
+      "name": "back",
       "nested":
           [
+             {
+                "class": "name",
+                "text": "MAS4RADIA"
+              },
+             {
+                "class": "section",
+                "nested":
+                    [
+                       {
+                          "class": "content",
+                          "text": "mas4radia@gmail.com"
+                        },
+                       {
+                          "class": "content",
+                          "text": "https://github.com/MAS4RADIA"
+                        }
+                     ]
+              },
+             {
+                "class": "footer",
+                "nested":
+                    [
+                       {
+                          "class": "link",
+                          "name": "face",
+                          "text": "Back"
+                        },
+                       {
+                          "class": "link",
+                          "name": "contact_form",
+                          "text": "Message"
+                        }
+                     ]
+              }
            ]
     },
    {
       "class": "card",
+      "name": "contact_form",
       "nested":
           [
+             {
+                "class": "footer",
+                "nested":
+                    [
+                       {
+                          "class": "link",
+                          "name": "back",
+                          "text": "Cancel"
+                        }
+                     ]
+              }
            ]
     }
  ]

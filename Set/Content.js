@@ -50,10 +50,11 @@ function MarkContent (main = null, structure = null)
               if (structure.text != undefined)
                   {  main.innerHTML = structure.text;  }
 
-              delete structure ["class"];
-              delete structure.nested;
-              delete structure.name;
               delete structure.text;
+              delete structure.nested;
+              if (structure ["class"] == undefined)
+                  {  delete structure.name;  }
+              delete structure ["class"];
 
               for (property in structure)
                   {

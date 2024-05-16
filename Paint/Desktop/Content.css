@@ -160,11 +160,10 @@
 .page[name="contact"] .card .centered .stripe
     {
        margin: 5px 0;
-       padding: 1px;
-       width: 100%;
-       border: 2px solid;
-       border-left: none;
-       border-right: none;
+       width: 70%;
+       height: 3px;
+       border-radius: 50px;
+       background-color: #37F;
      }
 .page[name="contact"] .card :where(.header, .footer)
     {
@@ -182,6 +181,14 @@
     {
        top: 0;
        flex-direction: row-reverse;
+     }
+.page[name="contact"] .card .centered.header
+    {
+       position: static;
+       width: 100%;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
      }
 .page[name="contact"] .card .link
     {

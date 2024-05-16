@@ -19,6 +19,10 @@
 
 .page[name="contact"] .card
     {  transition: all .5s;  }
+.page[name="contact"] .flip.card.to
+    {  display: none;  }
+.page[name="contact"] .flip.card.from
+    {  display: flex;  }
 /* --------------------------------------
 ------------------------------------- */
 .hide.to.left
@@ -41,17 +45,31 @@
        right: 0;
        animation: show_from_right .7s cubic-bezier(0.65, 0.05, 0.36, 1);
      }
-.page.flip.right
-    {
-       background-color: red;
-     }
+
+.flip.card.to.top
+    {  animation: flip_to_top 1s;  }
+.flip.card.to.left
+    {  animation: flip_to_left 1s;  }
+.flip.card.to.right
+    {  animation: flip_to_right 1s;  }
+.flip.card.to.bottom
+    {  animation: flip_to_bottom 1s;  }
+
+.flip.card.from.top
+    {  animation: flip_from_top 1s;  }
+.flip.card.from.left
+    {  animation: flip_from_left 1s;  }
+.flip.card.from.right
+    {  animation: flip_from_right 1s;  }
+.flip.card.from.bottom
+    {  animation: flip_from_bottom 1s;  }
 /* ------------------------------------------
 ------------------------------------------ */
 @keyframes hide_to_top
     {
        0%
            {
-              display: unset;
+              display: flex;
               max-height: 40px;
             }
        100%
@@ -83,7 +101,7 @@
             }
        100%
            {
-              display: unset;
+              display: flex;
               max-height: 40px;
             }
      }
@@ -100,4 +118,107 @@
            {  right: -100%;  }
        100%
            {  right: 0;  }
+     }
+
+@keyframes flip_to_top
+    {
+       0%
+           {
+              display: flex;
+              transform: rotateX(0);
+            }
+       100%
+           {
+              display: none;
+              transform: rotateX(180deg);
+            }
+     }
+@keyframes flip_to_left
+    {
+       0%
+          {
+             display: flex;
+             transform: rotateY(0);
+           }
+       100%
+          {
+             display: none;
+             transform: rotateY(180deg);
+           }
+     }
+@keyframes flip_to_right
+    {
+       0%
+          {
+             display: flex;
+             transform: rotateY(0);
+           }
+       100%
+          {
+             display: none;
+             transform: rotateY(180deg);
+           }
+     }
+@keyframes flip_to_bottom
+    {
+       0%
+           {
+              display: flex;
+              transform: rotateX(0);
+            }
+       100%
+           {
+              display: none;
+              transform: rotateX(180deg);
+            }
+     }
+@keyframes flip_from_top
+    {
+       0%
+           {
+              display: none;
+              transform: rotateX(180deg);
+            }
+       100%
+           {
+              display: flex;
+              transform: rotateX(0);
+            }
+     }
+@keyframes flip_from_left
+    {
+       0%
+           {
+              transform: rotateY(180deg);
+            }
+       100%
+           {
+              transform: rotateY(0);
+            }
+     }
+@keyframes flip_from_right
+    {
+       0%
+           {
+              display: none;
+              transform: rotateY(180deg);
+            }
+       100%
+           {
+              display: flex;
+              transform: rotateY(0);
+            }
+     }
+@keyframes flip_from_bottom
+    {
+       0%
+           {
+              display: none;
+              transform: rotateX(180deg);
+            }
+       100%
+           {
+              display: flex;
+              transform: rotateX(0);
+            }
      }
