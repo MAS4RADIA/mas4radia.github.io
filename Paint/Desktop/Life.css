@@ -1,3 +1,6 @@
+[name="landing"]::after
+    {  animation: spin 10s linear infinite;  }
+
 .skill .label
     {
        z-index: 2;
@@ -221,4 +224,12 @@
               display: flex;
               transform: rotateX(0);
             }
+     }
+
+@keyframes spin
+    {
+       0%
+           {  transform: rotate(360deg);  }
+       100%
+           {  transform: rotate(0);  }
      }
