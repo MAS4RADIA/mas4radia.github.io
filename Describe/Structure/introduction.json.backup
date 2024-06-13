@@ -29,33 +29,20 @@
    {
       "nature": "SECTION",
       "name": "briefing",
-      "class": "horizontal",
       "nested":
           [
              {
                 "nature": "DIV",
-                "class": "foot",
-                "name": "anchor"
-              },
-             {
-                "nature": "SECTION",
-                "name": "description",
+                "class": "paragraph",
                 "nested":
                     [
                        {
-                          "nature": "SECTION",
-                          "class": "hidden paragraph",
-                          "nested":
-                              [
-                                 {
-                                    "nature": "SPAN",
-                                    "class": "title"
-                                  },
-                                 {
-                                    "nature": "SPAN",
-                                    "class": "content"
-                                  }
-                               ]
+                          "nature": "SPAN",
+                          "class": "title"
+                        },
+                       {
+                          "nature": "SPAN",
+                          "class": "content"
                         }
                      ]
               }

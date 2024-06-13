@@ -2,9 +2,11 @@
 @import "/Paint/Desktop/Structure.css";
 @import "/Paint/Desktop/Content.css";
 @import "/Paint/Desktop/Life.css";
+@import "/Paint/Desktop/Foot.css";
 
 @import "/Paint/Mobile/Structure.css";
 @import "/Paint/Mobile/Content.css";
+@import "/Paint/Mobile/Foot.css";
 
 @font-face
     {

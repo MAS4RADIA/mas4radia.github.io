@@ -2,21 +2,24 @@ body
     {
        display: flex;
        position: relative;
-       flex-direction: column-reverse;
-       overflow: hidden;
        margin: 0;
+       overflow: hidden;
+       flex-direction: row;
      }
 
 #navigation
     {
-       position: sticky;
-       top: 0;
-       padding: 0 10px;
+       display: flex;
+       flex-direction: column;
+       align-items: flex-end;
+
+       width: 150px;
+       padding: 0;
        padding-top: 15px;
-       background-color: #FFF;
-       border-bottom: 1px solid #777;
+       background-color: #1E1E1E;
        user-select: none;
        text-align: right;
+       overflow: hidden;
        box-sizing: border-box;
      }
 
@@ -93,19 +96,30 @@ body
 [name="briefing"]
     {
        display: flex;
-       padding: 0 10px;
-       padding-top: 25px;
-       flex-direction: column;
-       justify-content: space-around;
-       min-height: fit-content !important;
+       height: 100%;
+       width: 100%;
+       padding: 5px;
+       flex-direction: row;
+       align-items: center;
+       justify-content: space-between;
+       overflow: hidden !important;
        background-color: #062137;
-       overflow: auto;
        color: #FFF;
+     }
+[name="briefing"] [name="description"]
+    {
+       position: relative;
+       display: flex;
+       height: 60%;
+       width: 100%;
+       padding: 0 20px;
+       overflow: hidden;
+       align-items: center;
      }
 [name="briefing"] .paragraph
     { 
+       position: absolute;
        display: flex;
-       position: relative;
        margin: 10px 0;
        padding: 10px;
        padding-top: 15px;

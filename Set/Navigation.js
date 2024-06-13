@@ -1,7 +1,8 @@
 import { Switch } from "/Set/Room.js";
 import { SetLanguage } from "/Set/Languages.js";
+import { SetWhole } from "/Set/Layout.js";
 
-var chart;
+var chart, route;
 export function SetNavigation (room)
     {
        var request, html, language, path;
@@ -9,6 +10,8 @@ export function SetNavigation (room)
        html = document.querySelector ("HTML");
        if (html != null)
            {  language = html.lang  }
+       if (room.path.length < 1 && route != undefined && route.length > 0 && route [0].name != undefined)
+           {  room.path = route [0].name;  }
 
        if (chart == null || language != room.language)
            {
@@ -26,7 +29,7 @@ export function SetNavigation (room)
 
        function CheckStops ()
            {
-              var route, body, point;
+              var body, point;
               try
                   {  route = JSON.parse (this.response);  }
               catch (error)
@@ -34,6 +37,8 @@ export function SetNavigation (room)
                      console.log (error);
                      return;
                    }
+              if (room.path.length < 1 && route.length > 0 && route [0].name != undefined)
+                  {  room.path = route [0].name;  }
 
               body = document.body;
               chart = document.getElementById ("navigation");
@@ -50,10 +55,17 @@ export function SetNavigation (room)
                      if (isNaN (point))
                          {  continue;  }
 
-                     var anchor = document.createElement ("SPAN");
+                     var anchor, link;
+                     link = route [point].name;
+                     if (point == 0)
+                         {  link = "";  }
+
+                     link = "/" + link;
+                     anchor = document.createElement ("A");
                      anchor.setAttribute ("name", route [point].name);
-                     anchor.addEventListener ("click", MoveTo);
+                     anchor.setAttribute ("href", link);
                      anchor.innerHTML = route [point].content;
+                     anchor.addEventListener ("click", MoveTo);
                      anchor.className = "link";
                      chart.appendChild (anchor);
                    }
@@ -65,6 +77,8 @@ export function SetNavigation (room)
               var current, anchor;
               current = chart.getElementsByClassName ("active");
               anchor = chart.children;
+              if (anchor [room.path] == undefined)
+                  {  return;  }
 
               while (current.length > 0)
                   {  current [0].classList.remove ("active");  }
@@ -72,17 +86,23 @@ export function SetNavigation (room)
 
               MovePointerTo (anchor [room.path]);
               room.title.innerHTML = anchor [room.path].innerHTML;
+              SetWhole (room);
             }
-       function MoveTo ()
+       function MoveTo (click)
            {
-              var hop = this.getAttribute ("name");
+              var first, hop;
+              click.preventDefault ();
+              hop = this.getAttribute ("name");
+              first = chart.children [0];
+
               if (hop == room.path)
                   {  return;  }
-              if (hop == "introduction")
+              if (this == first)
                   {  hop = "/";  }
 
               if (hop [0] != "/")
                   {  hop = "/" + hop;  }
+
               history.pushState (null, null, hop);
               Switch ();
             }
@@ -104,6 +124,5 @@ export function MovePointerTo (active = null)
               pointer.classList.add ("pointer");
               parent.appendChild (pointer);
             }
-       pointer.style.setProperty ("left", active.offsetLeft + "px");
-       pointer.style.setProperty ("width", active.offsetWidth + "px");
+       pointer.style.setProperty ("top", active.offsetTop + "px");
      }

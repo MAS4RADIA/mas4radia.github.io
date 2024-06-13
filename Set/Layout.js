@@ -1,7 +1,7 @@
 import { MovePointerTo } from "/Set/Navigation.js";
 import { FillContent } from "/Set/Content.js";
 import { AnimateHome } from "/Set/Life.js";
-import { ScrollMonitor, LastScroll } from "/Set/Scroll.js";
+import { ScrollMonitor } from "/Set/Scroll.js";
 
 export function SetWhole (room)
     {
@@ -16,6 +16,7 @@ export function SetWhole (room)
               main.id = "main";
               body.appendChild (main);
             }
+       window.addEventListener ("scroll", ScrollMonitor);
 
        page = document.getElementsByClassName ("page");
        current = page [room.path];
@@ -50,7 +51,6 @@ export function SetWhole (room)
               AttachDescendants (current, content);
               FillContent (current, room);
               MovePointerTo ();
-              //LastScroll ();
 
               if (location.pathname == "/")
                   {  AnimateHome ();  }
@@ -118,7 +118,7 @@ function FlipPage (room = null, root = null)
        if (navigation [name] == undefined)
            {  return;  }
 
-       if (navigation [name].offsetLeft > navigation [room.path].offsetLeft)
+       if (navigation [name].offsetTop > navigation [room.path].offsetTop)
            {
               active.classList.add ("hide", "to", "right");
               page [room.path].classList.add ("show", "from", "left");

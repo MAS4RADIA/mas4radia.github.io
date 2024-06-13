@@ -1,6 +1,7 @@
 import { SetWindows } from "/Set/Movement.js";
 import { ReadyBlinds } from "/Set/Retractable.js";
 import { CardFlip } from "/Set/Card.js";
+import { SetFoot } from "/Set/Foot.js";
 
 export function FillContent (main = null, room = null)
     {
@@ -33,6 +34,7 @@ export function FillContent (main = null, room = null)
               SetWindows (main);
               CardFlip (main);
               ReadyBlinds ();
+              SetFoot (main);
             }
      }
 

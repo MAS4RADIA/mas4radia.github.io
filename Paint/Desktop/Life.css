@@ -1,5 +1,5 @@
-[name="landing"]::after
-    {  animation: spin 10s linear infinite;  }
+/*[name="landing"]::after
+    {  animation: spin 10s linear infinite;  }*/
 
 .skill .label
     {
@@ -28,6 +28,30 @@
     {  display: flex;  }
 /* --------------------------------------
 ------------------------------------- */
+.hidden
+    {  display: none !important;  }
+.shown
+    {  display: unset;  }
+
+.hidden.to.top
+    {
+       top: -100%;
+       animation: slide_up .7s;
+     }
+.hidden.to.bottom
+    {
+       top: 100%;
+       animation: slide_down .7s;
+     }
+.shown.from.top
+    {
+       animation: drop_down .7s;
+     }
+.shown.from.bottom
+    {
+       animation: jump_up .5s;
+     }
+
 .hide.to.left
     {
        right: 100%;
@@ -68,6 +92,62 @@
     {  animation: flip_from_bottom 1s;  }
 /* ------------------------------------------
 ------------------------------------------ */
+@keyframes slide_up
+    {
+       0%
+           {
+              display: flex;
+              top: 0;
+            }
+       100%
+           {
+              display: flex;
+              top: -100%;
+            }
+     }
+@keyframes slide_down
+    {
+       0%
+           {
+              display: flex;
+              top: 50%;
+              transform: translateY(-50%);
+            }
+       100%
+           {
+              display: none;
+              top: 100%;
+            }
+     }
+@keyframes drop_down
+    {
+       0%
+           {
+              display: flex;
+              top: -100%;
+            }
+       100%
+           {
+              display: flex;
+              top: 50%;
+              transform: translateY(-54%);
+            }
+     }
+@keyframes jump_up
+    {
+       0%
+           {
+              display: none;
+              top: 100%;
+            }
+       100%
+           {
+              display: flex;
+              top: 50%;
+              transform: translateY(-50%);
+            }
+     }
+
 @keyframes hide_to_top
     {
        0%

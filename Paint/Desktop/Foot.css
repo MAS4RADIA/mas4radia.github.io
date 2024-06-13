@@ -1,0 +1,27 @@
+.foot[name="anchor"]
+    {
+       display: flex;
+       height: 606px;
+     }
+.foot
+    {
+       margin: 0;
+       padding: 0;
+       width: 100%;
+       height: 100%;
+     }
+
+.foot .toe
+    {
+       transition: transform 1.5s;
+       cursor: pointer;
+     }
+.foot .toe:hover
+    {
+       fill: white;
+     }
+.foot .flipped.toe
+    {
+       fill: white;
+       transform: rotate3d(240, 30, 10, -360deg);
+     }
