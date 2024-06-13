@@ -125,4 +125,5 @@ export function MovePointerTo (active = null)
               parent.appendChild (pointer);
             }
        pointer.style.setProperty ("top", active.offsetTop + "px");
+       pointer.style.setProperty ("height", active.offsetHeight + "px");
      }
