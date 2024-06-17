@@ -115,15 +115,33 @@ export function MovePointerTo (active = null)
        if (active == null || active.tagName == undefined || active.parentNode == undefined)
            {  return;  }
 
-       var pointer, parent;
-       parent = active.parentNode;
-       pointer = parent.getElementsByClassName ("pointer") [0];
+       var navigation, pointer, style, direction;
+       navigation = active.parentNode;
+       if (navigation == undefined || navigation == null)
+           {  return;  }
+
+       pointer = navigation.getElementsByClassName ("pointer") [0];
        if (pointer == undefined)
            {
               pointer = document.createElement ("SPAN");
               pointer.classList.add ("pointer");
-              parent.appendChild (pointer);
+              navigation.appendChild (pointer);
             }
-       pointer.style.setProperty ("top", active.offsetTop + "px");
-       pointer.style.setProperty ("height", active.offsetHeight + "px");
+       style = getComputedStyle (navigation);
+       direction = style.getPropertyValue ("flex-direction");
+
+       if (direction == "column")
+           {
+              pointer.style.setProperty ("left", "unset");
+              pointer.style.setProperty ("top", active.offsetTop + "px");
+              pointer.style.setProperty ("width", active.offsetWidth + "px");
+              pointer.style.setProperty ("height", active.offsetHeight + "px");
+            }
+       else if (direction == "row")
+           {
+              pointer.style.setProperty ("top", "unset");
+              pointer.style.setProperty ("left", active.offsetLeft + "px");
+              pointer.style.setProperty ("width", active.offsetWidth + "px");
+              pointer.style.setProperty ("height", active.offsetHeight + "px");
+            }
      }

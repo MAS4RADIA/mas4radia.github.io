@@ -22,9 +22,16 @@
               border-radius: 0;
               background-color: #333;
               transition-duration: .5s;
-              z-index: -1;
             }
 
+       .page
+           {  flex-direction: column !important;  }
+
+       [name="landing"]::after
+           {
+              width: 100vw;
+              height: 100vw;
+            }
        [name="landing"] .banner
            {
               border: none;
@@ -37,5 +44,30 @@
               padding: 5px 0;
               font-size: 45px;
               border: none;
+            }
+
+       .page[name="services"] [name="briefing"]
+           {  flex-direction: column;  }
+       .page[name="services"] .foot[name="anchor"]
+           {  display: none;  }
+       .page[name="services"] [name="description"]
+           {
+              flex-direction: column;
+
+              height: 100%;
+              overflow-y: auto !important;
+            }
+       .page[name="services"] [name="description"] .paragraph
+           {  position: relative;  }
+       .page[name="services"] [name="description"] .hidden.paragraph
+           {  display: flex !important;  }
+
+       .page[name="contact"], .page[name="me"]
+           {
+              justify-content: space-around !important;
+            }
+       .page[name="contact"] .panel
+           {
+              min-height: fit-content;
             }
      }

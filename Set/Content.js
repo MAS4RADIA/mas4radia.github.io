@@ -19,7 +19,7 @@ export function FillContent (main = null, room = null)
 
        function CheckContent ()
            {
-              var structure, section, name;
+              var structure, name;
               try
                   {  structure = JSON.parse (this.response);  }
               catch (error)

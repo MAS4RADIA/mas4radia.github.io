@@ -1,7 +1,6 @@
 [
    { "content": "Introduction", "name": "introduction" },
-   { "content": "Skills", "name": "skills" },
-   { "content": "Personality", "name": "personality" },
-   { "content": "Hobbies", "name": "hobbies" },
-   { "content": "Contact", "name": "contact" }
+   { "content": "Services", "name": "services" },
+   { "content": "Contact", "name": "contact" },
+   { "content": "Me", "name": "me" }
  ]

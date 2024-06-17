@@ -1,19 +1,5 @@
 [
    {
-      "name": "landing",
-      "nested":
-          [
-             {
-                "class": "intro",
-                "text": "Sincerly,"
-              },
-             {
-                "class": "motto",
-                "text": "Yours truly!"
-              }
-           ]
-    },
-   {
       "name": "briefing",
       "nested":
           [

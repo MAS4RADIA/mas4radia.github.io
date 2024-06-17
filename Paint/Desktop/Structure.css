@@ -128,6 +128,10 @@ body
        flex-direction: column;
      }
 
+.page[name="services"]
+    {
+     }
+
 .page[name="skills"]
     {
        padding: 5px;
@@ -278,4 +282,117 @@ body
        border: 3px solid;
        border-radius: 100%;
        z-index: -1;
+     }
+
+.page[name="me"]
+    {
+       display: flex;
+       flex-direction: row;
+       justify-content: space-between;
+       align-items: center;
+
+       position: relative;
+       width: 100%;
+       padding: 10px;
+       box-sizing: border-box;
+     }
+.page[name="me"] .wallpaper
+    {
+       position: absolute;
+       top: 0;
+       left: 0;
+     }
+.page[name="me"] .info
+    {
+       display: flex;
+       flex-direction: column;
+
+       min-width: fit-content;
+       min-height: fit-content;
+       box-sizing: border-box;
+       background-color: #333;
+       color: #EEE;
+     }
+
+.page[name="me"] #general.info
+    {
+       justify-content: space-between;
+
+       width: 300px;
+     }
+#general.info .row
+    {
+       display: flex;
+       flex-direction: row;
+       justify-content: space-between;
+
+       margin: 5px;
+     }
+#general.info .multiple
+    {
+       display: flex;
+       flex-direction: row;
+       
+     }
+
+#general.info .row:first-child
+    {
+       padding: 5px;
+       margin: 5px 0 10px;
+       border-bottom: 1px solid;
+     }
+#general.info .row:first-child .multiple
+    {  display: none;  }
+#general.info .multiple .value
+    {
+       margin-left: 1px;
+       padding: 1px 3px;
+       cursor: pointer;
+     }
+#general.info .multiple .value:first-child
+    {  margin: 0;  }
+
+#additional.info
+    {
+       padding: 5px;
+       width: 200px;
+     }
+#additional.info .switch
+    {
+       margin: 5px 0 10px;
+       border-bottom: 1px solid;
+     }
+#additional.info .switch .option
+    {
+       margin: 0 5px;
+     }
+#additional.info .switch .option:first-child
+    {  margin-left: 0;  }
+#additional.info .switch .option:last-child
+    {  margin-right: 0;  }
+
+.page[name="me"] .info .rowed
+    {
+       display: flex;
+       flex-direction: row;
+       justify-content: space-between;
+     }
+.page[name="me"] .info .rowed .element
+    {
+       margin: 0 20px;
+     }
+.page[name="me"] .info .content:first-child .element
+    {
+       margin-left: 0;
+     }
+.page[name="me"] .info .content:last-child .element
+    {
+       text-align: right;
+       margin-right: 0;
+     }
+
+.page[name="me"] .info .content
+    {
+       display: flex;
+       flex-direction: column;
      }

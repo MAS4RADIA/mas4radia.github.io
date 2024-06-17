@@ -21,7 +21,7 @@
     {
        position: absolute;
        width: 100%;
-       height: 25px;
+       height: 0;
        background-color: #333;
        transition: all .7s;
        z-index: 0;
@@ -160,7 +160,7 @@
      }
 
 /* ------------------------------------------------
------------------------------------------------- */
+------------------------------------------------ *
 .page[name="contact"] .card .centered
     {
        width: 50%;
@@ -226,4 +226,98 @@
 .page[name="contact"] .card .link:hover::after
     {
        width: 100%;
+     }
+/* ---------------------------------------------
+------------------------------------------------ */
+.page[name="contact"]
+    {
+       display: flex;
+       flex-direction: row;
+       justify-content: center;
+       align-items: center;
+     }
+.page[name="contact"] > *
+    {
+       display: flex;
+       flex-direction: column;
+       justify-content: space-between;
+
+       min-height: 50%;
+       margin: 5px;
+       padding: 0 5px;
+       box-sizing: border-box;
+       border: 1px solid #333;
+     }
+
+.page[name="contact"] [name="list"]
+    {
+       justify-content: flex-start;
+
+       padding: 0;
+       width: 250px;
+       user-select: none;
+     }
+.page[name="contact"] [name="list"] .row
+    {
+       display: flex;
+       flex-direction: row;
+       justify-content: space-between;
+
+       padding: 5px;
+       border:none;
+       border-bottom: 1px solid;
+       cursor: pointer;
+     }
+.page[name="contact"] [name="list"] .row:hover
+    {
+       background-color: rgba(200, 200, 200, .5);
+     }
+.page[name="contact"] [name="list"] [name="country"]
+    {
+       color: #FFF;
+       background-color: #333;
+     }
+.page[name="contact"] [name="list"] [name="country"]:hover
+    {  background-color: #333;  }
+.page[name="contact"] [name="list"] .row .address
+    {  display: none;  }
+
+.page[name="contact"] [name="form"]
+    {
+       width: 300px;
+     }
+.page[name="contact"] [name="form"] .row
+    {
+       margin: 10px 0;
+       display: flex;
+       flex-direction: row;
+       justify-content: space-between;
+     }
+.page[name="contact"] [name="form"] .row .field
+    {
+       border: none;
+       border-bottom: 1px solid;
+       font-family: serif;
+       font-size: 100%;
+     }
+.page[name="contact"] [name="form"] textarea
+    {
+       border: 1px solid;
+       resize: none;
+       min-height: 200px;
+     }
+
+.page[name="contact"] [name="form"] .control
+    {
+       display: flex;
+       flex-direction: row;
+       justify-content: center;
+       align-items: center;
+     }
+.page[name="contact"] .control .button
+    {
+       margin: 3px;
+       padding: 3px 10px;
+       border: 1px solid;
+       cursor: pointer;
      }

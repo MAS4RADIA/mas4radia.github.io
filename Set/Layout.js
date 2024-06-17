@@ -118,7 +118,7 @@ function FlipPage (room = null, root = null)
        if (navigation [name] == undefined)
            {  return;  }
 
-       if (navigation [name].offsetTop > navigation [room.path].offsetTop)
+       if (navigation [name].offsetTop > navigation [room.path].offsetTop || navigation [name].offsetLeft > navigation [room.path].offsetLeft)
            {
               active.classList.add ("hide", "to", "right");
               page [room.path].classList.add ("show", "from", "left");

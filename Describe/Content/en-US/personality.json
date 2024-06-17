@@ -48,19 +48,5 @@
                 "text": "Simplicity"
               }
            ]
-    },
-   {
-      "class": "trait",
-      "nested":
-          [
-             {
-                "class": "title",
-                "text": "Playful sarcasm"
-              },
-             {
-                "class": "content",
-                "text": "As the name suggests, I am both playful and sarcastic. Resulting in occasional friendly jabs."
-              }
-           ]
     }
  ]

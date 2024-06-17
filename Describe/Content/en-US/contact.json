@@ -1,99 +1,132 @@
 [
    {
-      "class": "card",
-      "name": "face",
+      "name": "list",
       "nested":
           [
              {
-                "class": "header",
+                "class": "row",
+                "name": "country",
                 "nested":
                     [
                        {
-                          "class": "link",
-                          "name": "contact_form",
-                          "text": "Message"
-                        }
-                     ]
-              },
-             {
-                "class": "logo",
-                "text": "3&#x00B0; Corp"
-              },
-             {
-                "class": "logo",
-                "name": "back",
-                "text": "MAS4RADIA"
-              },
-             {
-                "class": "footer",
-                "nested":
-                    [
-                       {
-                          "class": "link",
-                          "text": "Visit 3&#x00B0; Corp"
+                          "class": "column",
+                          "text": "Country"
                         },
                        {
-                          "class": "link",
-                          "name": "back",
-                          "text": "Flip"
+                          "class": "column",
+                          "text": "Madagascar"
                         }
                      ]
-              }
-           ]
-    },
-   {
-      "class": "card",
-      "name": "back",
-      "nested":
-          [
-             {
-                "class": "name",
-                "text": "MAS4RADIA"
               },
              {
-                "class": "section",
+                "class": "row",
+                "name": "mail",
                 "nested":
                     [
                        {
-                          "class": "content",
+                          "class": "column",
+                          "text": "Mail"
+                        },
+                       {
+                          "class": "column",
+                          "text": "MAS4RADIA"
+                        },
+                       {
+                          "class": "address",
                           "text": "mas4radia@gmail.com"
-                        },
-                       {
-                          "class": "content",
-                          "text": "https://github.com/MAS4RADIA"
                         }
                      ]
               },
              {
-                "class": "footer",
+                "class": "row",
+                "name": "github",
                 "nested":
                     [
                        {
-                          "class": "link",
-                          "name": "face",
-                          "text": "Back"
+                          "class": "column",
+                          "text": "GitHub"
                         },
                        {
-                          "class": "link",
-                          "name": "contact_form",
-                          "text": "Message"
+                          "class": "column",
+                          "text": "MAS4RADIA"
+                        },
+                       {
+                          "class": "address",
+                          "name": "external",
+                          "text": "github.com/MAS4RADIA"
+                        }
+                     ]
+              },
+             {
+                "class": "row",
+                "name": "linkedin",
+                "nested":
+                    [
+                       {
+                          "class": "column",
+                          "text": "LinkedIn"
+                        },
+                       {
+                          "class": "column",
+                          "text": "Danilo M."
+                        },
+                       {
+                          "class": "address",
+                          "name": "external",
+                          "text": "linkedin.com/in/danilo-mananjara-33b2a2192"
                         }
                      ]
               }
            ]
     },
    {
-      "class": "card",
-      "name": "contact_form",
+      "name": "form",
       "nested":
           [
              {
-                "class": "footer",
+                "class": "row",
                 "nested":
                     [
                        {
-                          "class": "link",
-                          "name": "back",
+                          "class": "name",
+                          "text": "Name"
+                        },
+                       {
+                          "class": "field",
+                          "placeholder": "Name"
+                        }
+                     ]
+              },
+             {
+                "class": "row",
+                "nested":
+                    [
+                       {
+                          "class": "name",
+                          "text": "Mail"
+                        },
+                       {
+                          "class": "field",
+                          "placeholder": "e-mail address"
+                        }
+                     ]
+              },
+             {
+                "name": "message",
+                "placeholder": "Message"
+              },
+             {
+                "class": "control",
+                "nested":
+                    [
+                       {
+                          "class": "button",
+                          "name": "send",
+                          "text": "Send"
+                        },
+                       {
+                          "class": "button",
+                          "name": "cancel",
                           "text": "Cancel"
                         }
                      ]

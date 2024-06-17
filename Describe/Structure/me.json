@@ -1,0 +1,80 @@
+[
+   {
+      "nature": "CANVAS",
+      "class": "wallpaper"
+    },
+   {
+      "nature": "SECTION",
+      "id": "general",
+       "class": "info",
+       "nested":
+           [
+              {
+                 "nature": "SECTION",
+                 "class": "listed",
+                 "nested":
+                     [
+                        {
+                           "nature": "SECTION",
+                           "class": "row",
+                           "nested":
+                               [
+                                  {
+                                     "nature": "SPAN",
+                                     "class": "column"
+                                   },
+                                  {
+                                     "nature": "SPAN",
+                                     "class": "multiple",
+                                     "nested":
+                                         [
+                                            {
+                                               "nature": "SPAN",
+                                               "class": "value"
+                                             }
+                                          ]
+                                   }
+                                ]
+                         }
+                      ]
+               }
+            ]
+    },
+   {
+      "nature": "SECTION",
+      "id": "additional",
+      "class": "info",
+      "nested":
+          [
+             {
+                "nature": "SECTION",
+                "class": "rowed switch",
+                "nested":
+                    [
+                       {
+                          "nature": "SPAN",
+                          "class": "option"
+                        }
+                     ]
+              },
+             {
+                "nature": "SECTION",
+                "class": "rowed display",
+                "nested":
+                    [
+                       {
+                          "nature": "SECTION",
+                          "class": "content",
+                          "nested":
+                              [
+                                 {
+                                    "nature": "SPAN",
+                                    "class": "element"
+                                  }
+                               ]
+                        }
+                     ]
+              }
+           ]
+    }
+ ]

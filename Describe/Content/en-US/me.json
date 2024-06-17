@@ -1,0 +1,156 @@
+[
+   {
+      "name": "general",
+      "nested":
+          [
+             {
+                "class": "row",
+                "nested":
+                    [
+                       {
+                          "class": "column",
+                          "text": "MAS4RADIA"
+                        }
+                     ]
+              },
+             {
+                "class": "row",
+                "nested":
+                    [
+                       {
+                          "class": "column",
+                          "text": "Name"
+                        },
+                       {
+                          "class": "value",
+                          "text": "Dany M."
+                        }
+                     ]
+              },
+             {
+                "class": "row",
+                "nested":
+                    [
+                       {
+                          "class": "column",
+                          "text": "Alias"
+                        },
+                       {
+                          "class": "value",
+                          "text": "MAS4RADIA"
+                        }
+                     ]
+              },
+             {
+                "class": "row",
+                "nested":
+                    [
+                       {
+                          "class": "column",
+                          "text": "Nationality"
+                        },
+                       {
+                          "class": "value",
+                          "text": "Malagasy"
+                        }
+                     ]
+              },
+             {
+                "class": "row",
+                "nested":
+                    [
+                       {
+                          "class": "column",
+                          "text": "Languages"
+                        },
+                       {
+                          "class": "value",
+                          "text": "Malagasy"
+                        },
+                       {
+                          "class": "value",
+                          "text": "French"
+                        },
+                       {
+                          "class": "value",
+                          "text": "English"
+                        }
+                     ]
+              },
+             {
+                "class": "row",
+                "nested":
+                    [
+                       {
+                          "class": "column",
+                          "text": "Class"
+                        },
+                       {
+                          "class": "value",
+                          "text": "Programmer"
+                        },
+                       {
+                          "class": "value",
+                          "text": "UI Animator"
+                        }
+                     ]
+              }
+           ]
+    },
+   {
+      "name": "additional",
+      "nested":
+          [
+             {
+                "class": "switch",
+                "nested":
+                    [
+                       {
+                          "class": "option",
+                          "name": "skills",
+                          "text": "Skills"
+                        },
+                       {
+                          "class": "option",
+                          "name": "hobbies",
+                          "text": "Hobbies"
+                        }
+                     ]
+              },
+             {
+                "class": "content",
+                "id": "skills",
+                "nested":
+                    [
+                       {
+                          "class": "element",
+                          "text": "Drawing"
+                        },
+                       {
+                          "class": "element",
+                          "text": "Coding"
+                        }
+                     ]
+              },
+             {
+                "class": "content",
+                "id": "hobbies",
+                "nested":
+                    [
+                       {
+                          "class": "element",
+                          "text": "Experimenting"
+                        },
+                       {
+                          "class": "element",
+                          "text": "Reading"
+                        },
+                       {
+                          "class": "element",
+                          "text": "Gaming"
+                        }
+                     ]
+              }
+           ]
+    }
+ ]
